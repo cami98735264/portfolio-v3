@@ -1,0 +1,97 @@
+---
+interface Props {
+  navbarElements: {
+    links: {
+      name: string;
+      url: string;
+    }[];
+  };
+}
+
+import developerArrow from "../assets/icons/developer-arrow.svg?url"
+let { navbarElements } = Astro.props;
+---
+
+<nav class="navbar">
+  <div class="navbar__logo">
+    <a href="/">
+      <img src={developerArrow} />
+      <span class="navbar__logo__author">Cristián, F. S. Developer</span>
+    </a>
+  </div>
+  <div class="navbar__links">
+    {
+      navbarElements.links.map((link: { name: string; url: string }) => {
+        return <a href={link.url}>{link.name}</a>;
+      })
+    }
+  </div>
+  <div class="navbar__language__input">
+    <select>
+      <option value="en">Español</option>
+      <option value="es">Inglés</option>
+    </select>
+  </div>
+</nav>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
+
+  .navbar {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: #26212c;
+    border-radius: 12px;
+  }
+
+  .navbar__logo a {
+    gap: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
+  .navbar__links a {
+    font-weight: 300;
+    color: #d9d3de;
+    font-size: 0.9rem;
+  }
+
+  .navbar__links {
+    display: flex;
+    gap: 36px;
+  }
+  a {
+    text-decoration: none;
+  }
+  .navbar__logo__author {
+    font-family: "Nothing You Could Do", serif;
+    color: var(--copy);
+    font-size: 1.3rem;
+    text-decoration: none;
+  }
+  .navbar__language__input {
+    border: 2px solid var(--border);
+    border-radius: 16px;
+  }
+  select {
+    border-radius: 16px;
+    font-size: 0.9rem;
+    border: none;
+    border-right: 12px solid transparent;
+    color: #a598b3;
+    padding: 6px 54px 6px 12px;
+    padding-right: 48px;
+    background-color: var(--background);
+  }
+
+  select:focus {
+    outline: 2px solid rgb(108, 108, 228);
+  }
+</style>

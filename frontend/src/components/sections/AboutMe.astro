@@ -1,0 +1,230 @@
+---
+import PageSection from "../PageSection.astro";
+import Button from "../Button.astro";
+import Github from "../../assets/icons/github.svg?url";
+import Linkedin from "../../assets/icons/linkedin.svg?url";
+import Whatsapp from "../../assets/icons/whatsapp.svg?url";
+import Gmail from "../../assets/icons/gmail.svg?url";
+import arrowRight from "../../assets/icons/arrow-right.svg?url";
+import download from "../../assets/icons/download.svg?url";
+import profilePicture from "../../assets/images/profile_picture.jpg?url";
+import dot from "../../assets/icons/dot.svg?url";
+---
+
+<PageSection
+  fixedHeight={true}
+  flexConfig={{
+    enable: true,
+    direction: "column",
+    justify: "center",
+    align: "center",
+    gap: "16px",
+  }}
+  maxWidth="1680px"
+>
+  <div class="hero">
+    <div class="hero__content">
+      <h1 class="hero__title" data-aos="fade-right" data-aos-delay="300">
+        Soy Cristián, <span
+          class="hero__title__customText"
+          style="color: var(--secondary)">Desarrollador</span
+        >
+        <span class="hero__title__customText" style="color: var(--primary)"
+          >Full Stack</span>
+      </h1>
+      <p class="hero__description" data-aos="fade-right" data-aos-delay="500">
+        Soy un desarrollador Full Stack especializado en backend y con amplios
+        conocimientos en JavaScript, ReactJS y ExpressJS. Destaco en
+        programación avanzada, gestión de bases de datos y diseño de experiencia
+        de usuario (UI/UX).
+      </p>
+
+      <div class="hero__buttons__container">
+        <div class="hero__buttons">
+          <Button
+            dataAos="fade-right"
+            dataAosDelay="500"
+            buttonStyle={{
+              width: "auto",
+              variant: "primary",
+              size: "small",
+              border: false,
+              borderRadius: "medium",
+              disabled: false,
+            }}
+            flexConfig={{
+              enable: true,
+              justify: "center",
+              align: "center",
+              gap: "16px",
+            }}
+            href="https://docs.astro.build"
+          >
+            <div class="buttons__text">Contáctame</div> <img src={arrowRight} />
+          </Button>
+          <Button
+            dataAos="fade-right"
+            dataAosDelay="500"
+            buttonStyle={{
+              width: "auto",
+              variant: "secondary",
+              size: "small",
+              border: true,
+              borderRadius: "medium",
+              disabled: false,
+            }}
+            flexConfig={{
+              enable: true,
+              justify: "center",
+              align: "center",
+              gap: "16px",
+            }}
+            href="https://docs.astro.build"
+          >
+            <div class="buttons__text">Descargar CV</div>
+            <img src={download} />
+          </Button>
+        </div>
+        <img src={dot} id="dot__image" data-aos="fade-right" data-aos-delay="700" />
+
+        <div class="hero__contact__links">
+          <span
+            class="hero__contact__link"
+            data-aos="fade-right"
+            data-aos-delay="700"
+          >
+            <img src={Github} />
+          </span>
+          <span
+            class="hero__contact__link"
+            data-aos="fade-right"
+            data-aos-delay="900"
+          >
+            <img src={Linkedin} />
+          </span>
+          <span
+            class="hero__contact__link"
+            data-aos="fade-right"
+            data-aos-delay="1100"
+          >
+            <img src={Whatsapp} />
+          </span>
+          <span
+            class="hero__contact__link"
+            data-aos="fade-right"
+            data-aos-delay="1300"
+          >
+            <img src={Gmail} />
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__image">
+      <img
+        src={profilePicture}
+        alt="Astro"
+        data-aos="flip-right"
+        data-aos-delay="1000"
+      />
+    </div>
+  </div>
+</PageSection>
+
+<style>
+  h1 {
+    line-height: 65px;
+  }
+  h1,
+  .hero__title__customText {
+    font-size: clamp(3rem, 4vw, 4.5rem);
+  }
+  .hero {
+    display: flex;
+  }
+  .hero__buttons img {
+    width: 30px;
+    object-fit: contain;
+    height: 30px;
+  }
+  .hero__contact__links {
+    display: flex;
+    gap: 8px;
+  }
+  .hero__buttons__container {
+    display: flex;
+    gap: 12px;
+  }
+  .buttons__text {
+    font-size: clamp(0.8rem, 1.1vw, 1.5rem);
+    text-align: left;
+  }
+  .hero__buttons {
+    display: flex;
+    gap: 8px;
+  }
+  .hero__description {
+    font-size: clamp(0.8rem, 1.1vw, 1.5rem);
+    color: var(--copy-light);
+  }
+
+  .hero__contact__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid var(--border);
+    width: 50px;
+    height: 100%;
+    padding: 12px;
+  }
+  .hero__contact__link img {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  @media (max-width: 880px) {
+    .hero {
+        flex-direction: column;
+        gap: 24px !important;
+    }
+    .hero__content {
+      gap: 24px;
+    }
+    .hero__title {
+      line-height: 55px;
+    }
+    .hero__image {
+        height: 100%;
+    }
+  }
+  @media (max-width: 1220px) {
+    .hero {
+        padding: 0px;
+        gap: 36px;
+    }
+
+    .hero__image, img {
+        object-fit: cover;
+        width: 100%;
+        height: 400px;
+    }
+
+  }
+  @media (max-width: 1480px) {
+    .hero__buttons__container {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    #dot__image {
+        display: none;
+    }
+  }
+</style>

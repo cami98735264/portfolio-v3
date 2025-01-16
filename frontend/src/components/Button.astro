@@ -1,0 +1,45 @@
+---
+interface Props {
+    flexConfig: {
+        enable: boolean
+        justify?: 'center' | 'flex-start' | 'flex-end' | 'space-between' | 'space-around' | 'space-evenly'
+        align?: 'center' | 'flex-start' | 'flex-end' | 'stretch' | 'baseline'
+        gap: string
+    }
+    buttonStyle: {
+        width: 'auto' | 'full'
+        variant: 'primary' | 'secondary' | 'tertiary'
+        size: 'small' | 'medium' | 'large'
+        border: boolean
+        borderRadius: 'none' | 'small' | 'medium' | 'large'
+        disabled: boolean
+    }
+    dataAos?: string,
+    dataAosDelay?: string,
+    href?: string
+    onClick?: (event: MouseEvent) => void
+}
+const { buttonStyle, flexConfig, href, dataAos, dataAosDelay } = Astro.props;
+
+let buttonStyles = `
+display: ${flexConfig.enable ? 'flex' : 'block'}; justify-content: ${flexConfig.justify || 'center'}; align-items: ${flexConfig.align || 'center'}; gap: ${flexConfig.gap || '16px'};
+width: ${buttonStyle.width === 'full' ? '100%' : 'auto'}; padding: ${buttonStyle.size === 'small' ? '8px 16px' : buttonStyle.size === 'medium' ? '12px 24px' : '16px 32px'}; border-radius: ${buttonStyle.borderRadius === 'small' ? '4px' : buttonStyle.borderRadius === 'medium' ? '8px' : buttonStyle.borderRadius === 'large' ? '16px' : '0'};
+background-color: ${buttonStyle.variant === 'primary' ? 'var(--primary)' : buttonStyle.variant === 'secondary' ? 'var(--foreground)' : 'var(--background)'};
+border: ${buttonStyle.border ? '2px solid var(--border)' : 'none'};
+cursor: pointer;
+color: var(--copy-light);
+`
+---
+
+
+<button style={buttonStyles} class="button" disabled={buttonStyle.disabled} data-aos={dataAos} data-aos-delay={dataAosDelay} >
+<slot />
+</button>
+<script define:vars={{href}} >
+    const button = document.querySelector('.button');
+    if (href) {
+        button.addEventListener('click', () => {
+            window.open(href, '_blank');
+        });
+    }
+</script>
