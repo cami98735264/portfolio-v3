@@ -14,8 +14,11 @@ let { navbarElements } = Astro.props;
 
 <nav class="navbar">
   <div class="navbar__logo">
-    <a href="/">
-      <img src={developerArrow} />
+    <button id="navbar__three__bars">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fbfbfb" d="M3.75 5.25a.75.75 0 0 0 0 1.5h16.5a.75.75 0 0 0 0-1.5zm0 6a.75.75 0 0 0 0 1.5h16.5a.75.75 0 0 0 0-1.5zm0 6a.75.75 0 0 0 0 1.5h16.5a.75.75 0 0 0 0-1.5z"/></svg>
+    </button>
+    <a href="/" id="navbar__logo__link">
+      <img src={developerArrow} alt="Developer Arrow" />
       <span class="navbar__logo__author">Cristián, F. S. Developer</span>
     </a>
   </div>
@@ -32,19 +35,79 @@ let { navbarElements } = Astro.props;
       <option value="es">Inglés</option>
     </select>
   </div>
+  <div class="navbar__links__mobile">
+    {
+      navbarElements.links.map((link: { name: string; url: string }) => {
+        return <a href={link.url}>{link.name}</a>;
+      })
+    }
+  </div>
 </nav>
 
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
+  
+  #navbar__three__bars {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .navbar__links__mobile {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    position: fixed;
+    top: 90px;
+    left: 20px;
+    right: 20px;
+    z-index: 1000;
+    padding: 12px;
+    background-color: #26212c;
+    border-radius: 12px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .navbar__links__mobile.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .navbar__links__mobile a {
+    border-radius: 12px;
+    padding: 14px;
+    transition: background-color 0.2s ease;
+  }
+
+  .navbar__links__mobile a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
 
   .navbar {
-    height: 50px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: 1000;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 12px 24px;
     background-color: #26212c;
     border-radius: 12px;
+  }
+
+  .navbar__logo {
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .navbar__logo a {
@@ -54,10 +117,7 @@ let { navbarElements } = Astro.props;
     align-items: center;
   }
 
-
-
-
-  .navbar__links a {
+  .navbar__links a, .navbar__links__mobile a {
     font-weight: 300;
     color: #d9d3de;
     font-size: 0.9rem;
@@ -67,22 +127,28 @@ let { navbarElements } = Astro.props;
     display: flex;
     gap: 36px;
   }
+
   a {
     text-decoration: none;
   }
+
   .navbar__logo__author {
     font-family: "Nothing You Could Do", serif;
     color: var(--copy);
     font-size: 1.3rem;
     text-decoration: none;
   }
+
   .navbar__language__input {
     border: 2px solid var(--border);
     border-radius: 16px;
+    height: 100%;
   }
+
   select {
     border-radius: 16px;
     font-size: 0.9rem;
+    height: 100%;
     border: none;
     border-right: 12px solid transparent;
     color: #a598b3;
@@ -94,4 +160,39 @@ let { navbarElements } = Astro.props;
   select:focus {
     outline: 2px solid rgb(108, 108, 228);
   }
+
+  @media (max-width: 880px) {
+    .navbar__links, #navbar__logo__link {
+      display: none;
+    }
+
+    #navbar__three__bars {
+      display: block;
+    }
+
+    .navbar {
+      flex-wrap: wrap;
+    }
+  }
 </style>
+
+<script>
+  const menuButton = document.getElementById('navbar__three__bars');
+  const mobileMenu = document.querySelector('.navbar__links__mobile');
+
+  if (menuButton && mobileMenu) {
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (event) => {
+      const isClickInsideMenu = mobileMenu.contains(event.target as Node);
+      const isClickOnButton = menuButton.contains(event.target as Node);
+      
+      if (!isClickInsideMenu && !isClickOnButton && mobileMenu.classList.contains('active')) {
+        mobileMenu.classList.remove('active');
+      }
+    });
+  }
+</script>
