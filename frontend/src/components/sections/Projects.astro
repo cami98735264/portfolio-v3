@@ -1,0 +1,36 @@
+---
+import PageSection from "../PageSection.astro"
+import Project from "../Project.jsx"
+---
+
+
+<PageSection fixedHeight={false} flexConfig={{
+    enable: true,
+    direction: "column",
+    justify: "center",
+    align: "center",
+    gap: "24px",
+}} maxWidth="1680px">
+    <h2>Lista de proyectos</h2>
+    <span id="project__header__label"><span style="color: var(--secondary);">23</span> hasta la fecha</span>
+    <p>En esta sección, se recopilarán cada uno de mis proyectos que me han definido un aprendizaje crucial en el proceso y creación de cada uno de ellos</p>
+    <Project client:load projectTitle="Helios Plates, detector de placas con IA" projectDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros." projectId={1} projectImage="https://via.placeholder.com/150" />
+</PageSection>
+
+
+<style>
+    p {
+        text-align: center;
+        font-size: var(--font-size-description);
+        color: var(--copy-light);
+    }
+    h2 {
+        font-size: var(--font-size-title);
+    }
+    #project__header__label {
+        padding: 6px 12px;
+        background-color: var(--foreground);
+        border: 2px solid var(--border);
+        border-radius: 12px;
+    }
+</style>

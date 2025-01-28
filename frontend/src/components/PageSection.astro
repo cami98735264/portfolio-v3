@@ -15,7 +15,7 @@ const { fixedHeight, flexConfig, maxWidth } = Astro.props
 ---
 
 <section class="page-section" style=`display: flex; align-items: center; justify-content: center;`>
-    <div class="page-section__content" style=`height: ${fixedHeight ? 'calc(100dvh - 70px)' : 'auto'}; max-width: ${maxWidth || '100%'}; `>
+    <div class="page-section__content" style=`height: ${fixedHeight ? 'calc(100dvh - 70px)' : 'auto'}; max-width: ${maxWidth || '100%'}; width: 100%;`>
         <div class="page-section__content-inner" style=`display: ${flexConfig.enable ? 'flex' : 'block'}; flex-direction: ${flexConfig.direction || 'column'}; justify-content: ${flexConfig.justify || 'flex-start'}; align-items: ${flexConfig.align || 'flex-start'}; gap: ${flexConfig.gap || '16px'}; height: ${fixedHeight ? '100%' : 'auto'}`>
             <slot />
         </div>

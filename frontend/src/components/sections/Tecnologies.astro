@@ -1,0 +1,35 @@
+---
+import PageSection from "../PageSection.astro"
+import Project from "../Project.jsx"
+---
+
+
+<PageSection fixedHeight={false} flexConfig={{
+    enable: true,
+    direction: "column",
+    justify: "center",
+    align: "center",
+    gap: "24px",
+}} maxWidth="1680px">
+    <h2>Lista de tecnologías</h2>
+    <span id="project__header__label"><span style="color: var(--secondary);">11</span> hasta la fecha</span>
+    <p>En esta sección, se recopilarán las tecnologías que he utillizado en mi trayectoría y de las cuales tengo un grado de proficiencia para cada una de ellas.</p>
+</PageSection>
+
+<style>
+    #project__header__label {
+        padding: 6px 12px;
+        background-color: var(--foreground);
+        border: 2px solid var(--border);
+        border-radius: 12px;
+    }
+    p {
+        text-align: center;
+        font-size: var(--font-size-description);
+        color: var(--copy-light);
+    }
+    h2 {
+        color: var(--copy);
+        font-size: var(--font-size-title);
+    }
+</style>

@@ -1,19 +1,29 @@
 ---
 import 'aos/dist/aos.css';
 import Layout from "../layouts/Layout.astro";
-import Button from "../components/Button.astro";
 import Navbar from "../components/Navbar.astro";
 import navbarElements from "../utils/navbarElements";
 import AboutMe from "../components/sections/AboutMe.astro";
+import Projects from '../components/sections/Projects.astro';
+import Tecnologies from '../components/sections/Tecnologies.astro';
 ---
 
 <Layout>
 	<Navbar navbarElements={navbarElements} />
-	<AboutMe/>
+	<div class="sections">
+		<AboutMe/>
+		<Projects/>
+		<Tecnologies/>
+	</div>
 </Layout>
 
 
 <style is:global>
+	.sections {
+		display: flex;
+		flex-direction: column;
+		gap: 56px;
+	}
 	.hero {
 		padding: 72px;
 		align-items: center;
