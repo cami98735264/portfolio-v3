@@ -66,7 +66,7 @@ const Project = ({ projectTitle, projectDescription, projectId, projectImage }) 
 
 }`
     return (
-        <div style={styles.container}>
+        <div style={styles.container} data-aos="zoom-in-down" data-aos-delay="200">
             <style>
                 {imageMediaQuerie}
             </style>

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.1.2",
+    "@iconify-json/devicon": "^1.2.12",
     "@re-dev/react-truncate": "^0.4.6",
     "@types/aos": "^3.0.7",
     "@types/react": "^19.0.4",
@@ -19,5 +20,8 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "styled-components": "^6.1.14"
+  },
+  "devDependencies": {
+    "astro-icon": "^1.1.5"
   }
 }
