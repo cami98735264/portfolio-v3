@@ -43,7 +43,6 @@
     --warning-content: #252503;
     --error-content: #ffffff;
   }
-
   * {
     font-family: "Inter", serif;
     color: var(--copy);
@@ -51,6 +50,20 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+  }
+  /* change scrollbar style */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--background);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--foreground);
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--border);
   }
 
   hr {
@@ -62,5 +75,6 @@
   body {
     padding: 20px 20px 0 20px;
     background-color: var(--background);
+    scroll-behavior: smooth;
   }
 </style>

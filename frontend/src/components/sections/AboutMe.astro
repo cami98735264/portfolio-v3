@@ -88,34 +88,42 @@ import dot from "../../assets/icons/dot.svg?url";
         <img src={dot} id="dot__image" data-aos="fade-right" data-aos-delay="700" />
 
         <div class="hero__contact__links">
-          <span
+          <a
             class="hero__contact__link"
             data-aos="fade-right"
             data-aos-delay="700"
+            href="https://github.com/cami98735264"
+            target="_blank"
           >
             <img src={Github} />
-          </span>
-          <span
+        </a>
+          <a
             class="hero__contact__link"
             data-aos="fade-right"
             data-aos-delay="900"
+            href="https://www.linkedin.com/in/cristi%C3%A1n-camilo-rodr%C3%ADguez-montealegre-8a8697272/"
+            target="_blank"
           >
             <img src={Linkedin} />
-          </span>
-          <span
+      </a>
+          <a
             class="hero__contact__link"
             data-aos="fade-right"
             data-aos-delay="1100"
+            href="wa.link/80u32v"
+            target="_blank"
           >
             <img src={Whatsapp} />
-          </span>
-          <span
+    </a>
+          <a
             class="hero__contact__link"
             data-aos="fade-right"
             data-aos-delay="1300"
+            href="https://mail.google.com/mail/u/0/?fs=1&to=mashlowtm0510@gmail.com&su=Hi!+I%27d+like+to+talk+about+your+services+:)&body=Hey!&tf=cm"
+            target="_blank"
           >
             <img src={Gmail} />
-          </span>
+  </a>
         </div>
       </div>
     </div>
@@ -166,7 +174,9 @@ import dot from "../../assets/icons/dot.svg?url";
     font-size: var(--font-size-description);
     color: var(--copy-light);
   }
-
+  .hero__contact__link:hover, .hero__contact__link:focus {
+    background-color: var(--foreground);
+  }
   .hero__contact__link {
     display: flex;
     align-items: center;
