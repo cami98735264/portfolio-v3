@@ -7,7 +7,7 @@ import { getLocale } from "astro-i18n-aut";
 import { removeAccents } from "../../utils/utils";
 const locale = getLocale(Astro.url);
 const translations = await loadTranslations(locale);
-let convertedId = removeAccents(translations.sections.technologies.title).toLowerCase().split(" ").join("-");
+let convertedId = removeAccents(translations.sections.technologies.containerId).toLowerCase().split(" ").join("-");
 ---
 
 
@@ -18,15 +18,15 @@ let convertedId = removeAccents(translations.sections.technologies.title).toLowe
     align: "center",
     gap: "24px",
 }} maxWidth="1680px">
-    <h2 data-aos="zoom-out">Lista de tecnologías</h2>
-    <div id="project__header__label" data-aos="zoom-out"><span style="color: var(--secondary);">11</span> hasta la fecha</div>
-    <p data-aos="zoom-out">En esta sección, se recopilarán las tecnologías que he utillizado en mi trayectoría y de las cuales tengo un grado de proficiencia para cada una de ellas.</p>
+    <h2 data-aos="zoom-out">{translations.sections.technologies.title}</h2>
+    <div id="project__header__label" data-aos="zoom-out"><span style="color: var(--secondary);">11</span> {translations.sections.technologies.count.description}</div>
+    <p data-aos="zoom-out">{translations.sections.technologies.description}</p>
     <div class="technologies__list__container">
-        <TechnologiesList title="Frontend development" technologiesList={["html5", "react", "vitejs", "css3", "svelte", "nextjs", "astro"]} />
-        <TechnologiesList title="Backend development" technologiesList={["express", "nodejs", "python"]} />
-        <TechnologiesList title="Databases" technologiesList={["mysql", "mongodb", "oracle", "postgresql"]} />
-        <TechnologiesList title="Design tools" technologiesList={["figma"]} />
-        <TechnologiesList title="Deployment services" technologiesList={["AWS-EC2", "AWS-S3", "Hostinger", "Netlify", "CPanel", "Render", "Vercel"]} localeIcon={true}/>
+        <TechnologiesList title={translations.sections.technologies.categories.frontend} technologiesList={["html5", "react", "vitejs", "css3", "svelte", "nextjs", "astro"]} />
+        <TechnologiesList title={translations.sections.technologies.categories.backend} technologiesList={["express", "nodejs", "python"]} />
+        <TechnologiesList title={translations.sections.technologies.categories.databases} technologiesList={["mysql", "mongodb", "oracle", "postgresql"]} />
+        <TechnologiesList title={translations.sections.technologies.categories.designTools} technologiesList={["figma"]} />
+        <TechnologiesList title={translations.sections.technologies.categories.deployment} technologiesList={["AWS-EC2", "AWS-S3", "Hostinger", "Netlify", "CPanel", "Render", "Vercel"]} localeIcon={true}/>
 
 
     </div>

@@ -29,14 +29,14 @@ let { navbarElements } = Astro.props;
   <div class="navbar__links">
     {
       navbarElements.links.map((link) => {
-        return <a href={`/#${removeAccents(translations.navbar[link].toLowerCase())}`}>{translations.navbar[link]}</a>;
+        return <a href={`#${removeAccents(translations.navbar[link].toLowerCase())}`}>{translations.navbar[link]}</a>;
       })
     }
   </div>
   <div class="navbar__language__input">
-    <select>
-      <option value="en">Español</option>
-      <option value="es">Inglés</option>
+    <select id="language-select">
+      <option value="es">{translations.navbar["languageInput"].options["es"]}</option>
+      <option value="en" selected={locale === "en" ? true : false}>{translations.navbar["languageInput"].options["en"]}</option>
     </select>
   </div>
   <div class="navbar__links__mobile">
@@ -180,9 +180,10 @@ let { navbarElements } = Astro.props;
   }
 </style>
 
-<script>
+<script define:vars={{locale}}>
   const menuButton = document.getElementById('navbar__three__bars');
   const mobileMenu = document.querySelector('.navbar__links__mobile');
+  const languageSelect = document.getElementById('language-select');
 
   if (menuButton && mobileMenu) {
     menuButton.addEventListener('click', () => {
@@ -191,12 +192,20 @@ let { navbarElements } = Astro.props;
 
     // Close menu when clicking outside
     document.addEventListener('click', (event) => {
-      const isClickInsideMenu = mobileMenu.contains(event.target as Node);
-      const isClickOnButton = menuButton.contains(event.target as Node);
+      const isClickInsideMenu = mobileMenu.contains(event.target);
+      const isClickOnButton = menuButton.contains(event.target);
       
       if (!isClickInsideMenu && !isClickOnButton && mobileMenu.classList.contains('active')) {
         mobileMenu.classList.remove('active');
       }
+    });
+  }
+  if (languageSelect) {
+    languageSelect.addEventListener('change', (event) => {
+      const selectedLocale = event.target?.value;
+      const currentPath = location.pathname.split('/').slice(2).join('/');
+      const newPath = `/${selectedLocale}/${currentPath}`;
+      window.location.href = newPath;
     });
   }
 </script>

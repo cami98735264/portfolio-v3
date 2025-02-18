@@ -2,24 +2,50 @@
     "navbar": {
         "projects": "Proyectos",
         "technologies": "Tecnologías",
-        "experience": "Experiencia"
+        "experience": "Experiencia",
+        "languageInput": {
+            "options": {
+                "en": "Inglés",
+                "es": "Español"
+            }
+        }
     },
     "sections": {
         "aboutMe": {
+            "containerId": "Sobre mí",
             "title": "Sobre mí",
-            "description": "Esta es una breve descripción de quién soy."
+            "descriptionTitle": "Soy Cristián, Desarrollador Full Stack",
+            "description": "Soy un desarrollador Full Stack especializado en backend y con amplios conocimientos en JavaScript, ReactJS y ExpressJS. Destaco en programación avanzada, gestión de bases de datos y diseño de experiencia de usuario (UI/UX).",
+            "contactMe": "Contáctame",
+            "downloadCV": "Descargar CV"
         },
         "projects": {
-            "title": "Proyectos",
-            "description": "Aquí puedes encontrar algunos de los proyectos en los que he trabajado."
+            "containerId": "Proyectos",
+            "count": {
+                "description": "hasta la fecha"
+            },
+            "title": "Lista de proyectos",
+            "description": "En esta sección, se recopilarán cada uno de mis proyectos que me han definido un aprendizaje crucial en el proceso y creación de cada uno de ellos."
         },
         "technologies": {
-            "title": "Tecnologías",
-            "description": "Estas son algunas de las tecnologías con las que tengo experiencia."
+            "containerId": "Tecnologías",
+            "count": {
+                "description": "hasta la fecha"
+            },
+            "categories": {
+                "frontend": "Desarrollo Frontend",
+                "backend": "Desarrollo Backend",
+                "databases": "Bases de datos",
+                "designTools": "Herramientas de diseño",
+                "deployment": "Despliegue"
+            },
+            "title": "Lista de tecnologías",
+            "description": "En esta sección, se recopilarán las tecnologías que he utillizado en mi trayectoría y de las cuales tengo un grado de proficiencia para cada una de ellas."
         },
         "experience": {
-            "title": "Experiencia",
-            "description": "Este es un resumen de mi experiencia profesional."
+            "containerId": "Experiencia",
+            "title": "Experiencia laboral",
+            "description": "Con una trayectoria de +1 año de experiencia, he diseñado sistemas de información en diferentes ámbitos empresariales, certificando mi conocimiento en creación y despliegue de aplicaciones full stack."
         }
     }
 }

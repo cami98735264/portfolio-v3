@@ -6,7 +6,7 @@ import { getLocale } from "astro-i18n-aut";
 import { removeAccents } from "../../utils/utils";
 const locale = getLocale(Astro.url);
 const translations = await loadTranslations(locale);
-let convertedId = removeAccents(translations.sections.experience.title).toLowerCase().split(" ").join("-");
+let convertedId = removeAccents(translations.sections.experience.containerId).toLowerCase().split(" ").join("-");
 ---
 
 <PageSection
@@ -20,11 +20,9 @@ let convertedId = removeAccents(translations.sections.experience.title).toLowerC
   }}
   maxWidth="1680px"
 >
-  <h2 data-aos="zoom-out">Experiencia laboral</h2>
+  <h2 data-aos="zoom-out">{translations.sections.experience.title}</h2>
   <p data-aos="zoom-in">
-    Con una trayectoria de +1 año de experiencia, he diseñado sistemas de
-    información en diferentes ámbitos empresariales, certificando mi
-    conocimiento en creación y despliegue de aplicaciones full stack.
+    {translations.sections.experience.description}
   </p>
   <div class="experiences__container">
     <Experience

@@ -14,7 +14,8 @@ import { getLocale } from "astro-i18n-aut";
 import { removeAccents } from "../../utils/utils";
 const locale = getLocale(Astro.url);
 const translations = await loadTranslations(locale);
-let convertedId = removeAccents(translations.sections.aboutMe.title).toLowerCase().split(" ").join("-");
+let convertedId = removeAccents(translations.sections.aboutMe.containerId).toLowerCase().split(" ").join("-");
+const descriptionTitle = translations.sections.aboutMe.descriptionTitle;
 ---
 
 <PageSection id={convertedId}
@@ -31,18 +32,16 @@ let convertedId = removeAccents(translations.sections.aboutMe.title).toLowerCase
   <div class="hero">
     <div class="hero__content">
       <h1 class="hero__title" data-aos="fade-right" data-aos-delay="300">
-        Soy Cristián, <span
+        {descriptionTitle.split(",")[0]}, <span
           class="hero__title__customText"
-          style="color: var(--secondary)">Desarrollador</span
+          style="color: var(--secondary)">{descriptionTitle.split(",")[1].trim().split(" ")[0]}</span
         >
-        <span class="hero__title__customText" style="color: var(--primary)"
-          >Full Stack</span>
+        {locale === "es" ? <span class="hero__title__customText" style="color: var(--primary)"
+          >{descriptionTitle.split(",")[1].trim().split(" ")[1]} {descriptionTitle.split(",")[1].trim().split(" ")[2]}</span> : <span class="hero__title__customText" style="color: var(--secondary)"
+          >{descriptionTitle.split(",")[1].trim().split(" ")[1]}</span> <span class="hero__title__customText" style="color: var(--primary)">{descriptionTitle.split(",")[1].trim().split(" ")[2]}</span>}
       </h1>
       <p class="hero__description" data-aos="fade-right" data-aos-delay="500">
-        Soy un desarrollador Full Stack especializado en backend y con amplios
-        conocimientos en JavaScript, ReactJS y ExpressJS. Destaco en
-        programación avanzada, gestión de bases de datos y diseño de experiencia
-        de usuario (UI/UX).
+        {translations.sections.aboutMe.description}
       </p>
 
       <div class="hero__buttons__container">
@@ -66,7 +65,7 @@ let convertedId = removeAccents(translations.sections.aboutMe.title).toLowerCase
             }}
             href="https://docs.astro.build"
           >
-            <div class="buttons__text">Contáctame</div> <img src={arrowRight} />
+            <div class="buttons__text">{translations.sections.aboutMe.contactMe}</div> <img src={arrowRight} />
           </Button>
           <Button
             dataAos="fade-right"
@@ -87,7 +86,7 @@ let convertedId = removeAccents(translations.sections.aboutMe.title).toLowerCase
             }}
             href="https://docs.astro.build"
           >
-            <div class="buttons__text">Descargar CV</div>
+            <div class="buttons__text">{translations.sections.aboutMe.downloadCV}</div>
             <img src={download} />
           </Button>
         </div>

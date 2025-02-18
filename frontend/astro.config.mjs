@@ -30,7 +30,7 @@ export default defineConfig({
     filter: filterSitemapByDefaultLocale({ defaultLocale }),
   }),],
   site: "https://crodriguez.com.co",
-  trailingSlash: "never",
+  trailingSlash: "always",
   build: {
     format: "directory",
   },

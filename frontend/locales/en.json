@@ -2,24 +2,50 @@
     "navbar": {
         "projects": "Projects",
         "technologies": "Technologies",
-        "experience": "Experience"
+        "experience": "Experience",
+        "languageInput": {
+            "options": {
+                "en": "English",
+                "es": "Spanish"
+            }
+        }
     },
     "sections": {
         "aboutMe": {
+            "containerId": "About me",
             "title": "About me",
-            "description": "This is a brief description of who I am."
+            "description": "I'm a Full Stack developer specialized in backend and with extensive knowledge in JavaScript, ReactJS and ExpressJS. I stand out in advanced programming, database management and user experience design (UI/UX).",
+            "descriptionTitle": "I'm Cristián, Full Stack Developer",
+            "contactMe": "Contact me",
+            "downloadCV": "Download CV"
         },
         "projects": {
-            "title": "Projects",
-            "description": "Here you can find some of the projects I have worked on."
+            "containerId": "Projects",
+            "count": {
+                "description": "to date"
+            },
+            "title": "List of projects",
+            "description": "In this section, each of my projects that have defined a crucial learning in the process and creation of each of them will be compiled."
         },
         "technologies": {
-            "title": "Technologies",
-            "description": "These are some of the technologies I have experience with."
+            "containerId": "Technologies",
+            "count": {
+                "description": "to date"
+            },
+            "categories": {
+                "frontend": "Frontend development",
+                "backend": "Backend development",
+                "databases": "Databases",
+                "designTools": "Design tools",
+                "deployment": "Deployment"
+            },
+            "title": "List of technologies",
+            "description": "In this section, the technologies that I have used in my career and of which I have a degree of proficiency for each of them will be compiled."
         },
         "experience": {
-            "title": "Experience",
-            "description": "This is a summary of my professional experience."
+            "containerId": "Experience",
+            "title": "Work experience",
+            "description": "With a trajectory of +1 year of experience, I have designed information systems in different business areas, certifying my knowledge in the creation and deployment of full stack applications."
         }
     }
 }
