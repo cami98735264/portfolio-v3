@@ -9,9 +9,15 @@ import arrowRight from "../../assets/icons/arrow-right.svg?url";
 import download from "../../assets/icons/download.svg?url";
 import profilePicture from "../../assets/images/profile_picture.jpg?url";
 import dot from "../../assets/icons/dot.svg?url";
+import { loadTranslations } from "../../i18n";
+import { getLocale } from "astro-i18n-aut";
+import { removeAccents } from "../../utils/utils";
+const locale = getLocale(Astro.url);
+const translations = await loadTranslations(locale);
+let convertedId = removeAccents(translations.sections.aboutMe.title).toLowerCase().split(" ").join("-");
 ---
 
-<PageSection
+<PageSection id={convertedId}
   fixedHeight={true}
   flexConfig={{
     enable: true,

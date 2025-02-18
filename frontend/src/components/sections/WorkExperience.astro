@@ -1,10 +1,16 @@
 ---
 import Experience from "../Experience.astro";
 import PageSection from "../PageSection.astro";
+import { loadTranslations } from "../../i18n";
+import { getLocale } from "astro-i18n-aut";
+import { removeAccents } from "../../utils/utils";
+const locale = getLocale(Astro.url);
+const translations = await loadTranslations(locale);
+let convertedId = removeAccents(translations.sections.experience.title).toLowerCase().split(" ").join("-");
 ---
 
 <PageSection
-  fixedHeight={false}
+  fixedHeight={false} id={convertedId}
   flexConfig={{
     enable: true,
     direction: "column",

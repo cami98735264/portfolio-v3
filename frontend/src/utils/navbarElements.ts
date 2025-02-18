@@ -1,18 +1,7 @@
 let navbarElements = {
-	links: [
-		{
-			name: 'Proyectos',
-			url: '/proyectos'
-		},
-		{
-			name: 'Tecnologías',
-			url: '/tecnologias'
-		},
-		{
-			name: 'Experiencia',
-			url: '/experiencia'
-		}
-	]
+	links: ["projects", "technologies", "experience"]
 }
+
+
 
 export default navbarElements;

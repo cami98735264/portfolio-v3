@@ -1,0 +1,25 @@
+{
+    "navbar": {
+        "projects": "Proyectos",
+        "technologies": "Tecnologías",
+        "experience": "Experiencia"
+    },
+    "sections": {
+        "aboutMe": {
+            "title": "Sobre mí",
+            "description": "Esta es una breve descripción de quién soy."
+        },
+        "projects": {
+            "title": "Proyectos",
+            "description": "Aquí puedes encontrar algunos de los proyectos en los que he trabajado."
+        },
+        "technologies": {
+            "title": "Tecnologías",
+            "description": "Estas son algunas de las tecnologías con las que tengo experiencia."
+        },
+        "experience": {
+            "title": "Experiencia",
+            "description": "Este es un resumen de mi experiencia profesional."
+        }
+    }
+}

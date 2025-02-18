@@ -1,14 +1,18 @@
 ---
 interface Props {
   navbarElements: {
-    links: {
-      name: string;
-      url: string;
-    }[];
+    links: string[]
   };
 }
 
+
 import developerArrow from "../assets/icons/developer-arrow.svg?url"
+import { loadTranslations } from "../i18n";
+import { getLocale } from "astro-i18n-aut";
+import { generateUrl, removeAccents } from "../utils/utils";
+const locale = getLocale(Astro.url);
+const translations = await loadTranslations(locale);
+
 let { navbarElements } = Astro.props;
 ---
 
@@ -24,8 +28,8 @@ let { navbarElements } = Astro.props;
   </div>
   <div class="navbar__links">
     {
-      navbarElements.links.map((link: { name: string; url: string }) => {
-        return <a href={link.url}>{link.name}</a>;
+      navbarElements.links.map((link) => {
+        return <a href={`/#${removeAccents(translations.navbar[link].toLowerCase())}`}>{translations.navbar[link]}</a>;
       })
     }
   </div>
@@ -37,8 +41,8 @@ let { navbarElements } = Astro.props;
   </div>
   <div class="navbar__links__mobile">
     {
-      navbarElements.links.map((link: { name: string; url: string }) => {
-        return <a href={link.url}>{link.name}</a>;
+      navbarElements.links.map((link) => {
+        return <a href={generateUrl(locale, link)}>{link}</a>;
       })
     }
   </div>
