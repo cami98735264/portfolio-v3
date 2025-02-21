@@ -1,4 +1,15 @@
 ---
+interface Project {
+    id: number;
+    title: string;
+    description: string;
+    backgroundUrl: string;
+    technologies: {
+        name: string;
+        backgroundColor: string;
+        textColor: string;
+    }[];
+}
 import PageSection from "../PageSection.astro"
 import Project from "../Project.jsx"
 import { loadTranslations } from "../../i18n";
@@ -21,7 +32,11 @@ let convertedId = removeAccents(translations.sections.projects.containerId).toLo
     <h2 data-aos="zoom-out">{translations.sections.projects.title}</h2>
     <div id="project__header__label" data-aos="zoom-out"><span style="color: var(--secondary);">5</span> {translations.sections.projects.count.description}</div>
     <p data-aos="zoom-in">{translations.sections.projects.description}</p>
-    <Project client:load projectTitle="Helios Plates, detector de placas con IA" projectDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros." projectId={1} projectImage="https://via.placeholder.com/150" />
+    <Fragment>
+        {translations.sections.projects.list.map((project: Project) => {
+            return <Project client:only="react" projectTitle={project.title} projectDescription={project.description} projectId={project.id} projectImage={project.backgroundUrl} />;
+        })}
+    </Fragment>
 </PageSection>
 
 

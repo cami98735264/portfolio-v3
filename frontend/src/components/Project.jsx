@@ -71,7 +71,7 @@ const Project = ({ projectTitle, projectDescription, projectId, projectImage }) 
                 {imageMediaQuerie}
             </style>
             <div style={styles.imageContainer}>
-                <img src={"https://placehold.co/600x400"} alt={projectTitle} className='project-image' style={styles.image} />
+                <img src={projectImage} alt={projectTitle} className='project-image' style={styles.image} />
             </div>
             <div style={styles.body}>
                 <div style={styles.header}>
