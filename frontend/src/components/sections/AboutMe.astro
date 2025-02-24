@@ -15,6 +15,8 @@ import { removeAccents } from "../../utils/utils";
 const locale = getLocale(Astro.url);
 const translations = await loadTranslations(locale);
 let convertedId = removeAccents(translations.sections.aboutMe.containerId).toLowerCase().split(" ").join("-");
+let contactMeId = removeAccents(translations.sections.contactMe.containerId).toLowerCase().split(" ").join("-");
+
 const descriptionTitle = translations.sections.aboutMe.descriptionTitle;
 ---
 
@@ -63,12 +65,13 @@ const descriptionTitle = translations.sections.aboutMe.descriptionTitle;
               align: "center",
               gap: "16px",
             }}
-            href="https://docs.astro.build"
+            href={`#${contactMeId}`}
+            openInNewTab={false}
           >
             <div class="buttons__text">{translations.sections.aboutMe.contactMe}</div> <img src={arrowRight} />
           </Button>
           <Button
-            dataAos="fade-right"
+          dataAos="fade-right"
             dataAosDelay="500"
             buttonStyle={{
               width: "auto",
@@ -84,7 +87,8 @@ const descriptionTitle = translations.sections.aboutMe.descriptionTitle;
               align: "center",
               gap: "16px",
             }}
-            href="https://docs.astro.build"
+            openInNewTab={false}
+            href={translations.sections.aboutMe.downloadCVUrl}
           >
             <div class="buttons__text">{translations.sections.aboutMe.downloadCV}</div>
             <img src={download} />

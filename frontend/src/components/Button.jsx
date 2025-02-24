@@ -1,6 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 const Button = ({ flexConfig, buttonStyle, dataAos, dataAosDelay, href, children }) => {
+    const buttonRef = useRef(null);
+
     const buttonStyles = {
         display: flexConfig.enable ? 'flex' : 'block',
         justifyContent: flexConfig.justify || 'center',
@@ -15,19 +17,41 @@ const Button = ({ flexConfig, buttonStyle, dataAos, dataAosDelay, href, children
         color: 'var(--copy-light)',
     };
 
+    useEffect(() => {
+        const button = buttonRef.current;
+
+        if (href) {
+            button.addEventListener('click', () => {
+                window.open(href, '_blank');
+            });
+        }
+
+        const handleMouseOver = () => {
+            button.style.backgroundColor = 'var(--primary-dark)';
+            button.style.transition = 'background-color 0.3s ease';
+        };
+
+        const handleMouseOut = () => {
+            button.style.backgroundColor = buttonStyle.variant === 'primary' ? 'var(--primary)' : buttonStyle.variant === 'secondary' ? 'var(--foreground)' : 'var(--background)';
+        };
+
+        button.addEventListener('mouseover', handleMouseOver);
+        button.addEventListener('mouseout', handleMouseOut);
+
+        return () => {
+            button.removeEventListener('mouseover', handleMouseOver);
+            button.removeEventListener('mouseout', handleMouseOut);
+        };
+    }, [href, buttonStyle.variant]);
+
     return (
         <button
+            ref={buttonRef}
             style={buttonStyles}
             className="button"
             disabled={buttonStyle.disabled}
             data-aos={dataAos}
             data-aos-delay={dataAosDelay}
-            onClick={() => {
-                // ADD HREF LOGIC HERE
-                if (href) {
-                    window.open(href, '_blank');
-                }
-            }}
         >
             {children}
         </button>

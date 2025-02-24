@@ -17,9 +17,14 @@ interface Props {
     dataAos?: string,
     dataAosDelay?: string,
     href?: string
+    openInNewTab?: boolean
     onClick?: (event: MouseEvent) => void
+    id?: string
 }
-const { buttonStyle, flexConfig, href, dataAos, dataAosDelay } = Astro.props;
+const { buttonStyle, flexConfig, href, dataAos, dataAosDelay, openInNewTab, id } = Astro.props;
+
+// Generate a unique ID if none is provided
+const buttonId = id || `button-${Math.random().toString(36).substring(2, 11)}`;
 
 let buttonStyles = `
 display: ${flexConfig.enable ? 'flex' : 'block'}; justify-content: ${flexConfig.justify || 'center'}; align-items: ${flexConfig.align || 'center'}; gap: ${flexConfig.gap || '16px'};
@@ -31,15 +36,62 @@ color: var(--copy-light);
 `
 ---
 
-
-<button style={buttonStyles} class="button" disabled={buttonStyle.disabled} data-aos={dataAos} data-aos-delay={dataAosDelay} >
-<slot />
+<button 
+  id={buttonId}
+  style={buttonStyles} 
+  class="button" 
+  disabled={buttonStyle.disabled} 
+  data-aos={dataAos} 
+  data-aos-delay={dataAosDelay}
+  data-href={href}
+  data-open-new-tab={openInNewTab ? "true" : "false"}
+  data-variant={buttonStyle.variant}
+>
+  <slot />
 </button>
-<script define:vars={{href}} >
-    const button = document.querySelector('.button');
+
+<script define:vars={{ buttonId }}>
+  // Find the specific button by its ID
+  const button = document.getElementById(buttonId);
+  
+  if (button) {
+    const href = button.dataset.href;
+    const openInNewTab = button.dataset.openNewTab === "true";
+    const variant = button.dataset.variant;
+    
     if (href) {
-        button.addEventListener('click', () => {
-            window.open(href, '_blank');
-        });
+      button.addEventListener('click', () => {
+        if (openInNewTab) {
+          window.open(href, '_blank');
+        } else {
+          window.location.href = href;
+        }
+      });
     }
+    
+    // Add hover effects based on the button's variant
+    button.addEventListener('mouseover', () => {
+      button.style.transition = 'background-color 0.3s ease';
+      
+      // Apply appropriate hover color based on the variant
+      if (variant === 'primary') {
+        button.style.backgroundColor = 'var(--primary-dark)';
+      } else if (variant === 'secondary') {
+        button.style.backgroundColor = 'var(--foreground-dark, #1a1a1a)';
+      } else if (variant === 'tertiary') {
+        button.style.backgroundColor = 'var(--background-dark, #f0f0f0)';
+      }
+    });
+    
+    button.addEventListener('mouseout', () => {
+      // Restore original color based on the variant
+      if (variant === 'primary') {
+        button.style.backgroundColor = 'var(--primary)';
+      } else if (variant === 'secondary') {
+        button.style.backgroundColor = 'var(--foreground)';
+      } else if (variant === 'tertiary') {
+        button.style.backgroundColor = 'var(--background)';
+      }
+    });
+  }
 </script>

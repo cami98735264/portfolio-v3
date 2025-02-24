@@ -17,7 +17,19 @@
             "descriptionTitle": "Soy Cristián, Desarrollador Full Stack",
             "description": "Soy un desarrollador Full Stack especializado en backend y con amplios conocimientos en JavaScript, ReactJS y ExpressJS. Destaco en programación avanzada, gestión de bases de datos y diseño de experiencia de usuario (UI/UX).",
             "contactMe": "Contáctame",
-            "downloadCV": "Descargar CV"
+            "downloadCV": "Descargar CV",
+            "downloadCVUrl": "https://github.com/cami98735264/cami98735264/raw/refs/heads/main/CRISTIAN%20CAMILO%20RODRIGUEZ%20FULL%20STACK%20CV%20ESPAÑOL.pdf"
+        },
+        "contactMe": {
+            "containerId": "Contáctame",
+            "title": "Contáctame",
+            "description": "Si deseas contactarme para colaborar en un proyecto o simplemente saludar, no dudes en enviarme un mensaje a través de mi correo electrónico o mis redes sociales.",
+            "form": {
+                "name": "Sujeto",
+                "email": "Correo electrónico",
+                "message": "Mensaje",
+                "send": "Enviar"
+            }
         },
         "projects": {
             "list": [{
