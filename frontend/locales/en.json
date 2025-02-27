@@ -264,6 +264,7 @@
           "id": 8,
           "title": "Vehicle License Plate Detection and Monitoring Platform V2 (Improved and migrated to SvelteJS)",
           "description": "Platform and detection software that uses the YoloV8 artificial intelligence algorithm for license plate recognition. Implementation of functionalities to study and map behavior patterns based on the location of license plate records within the web platform using the SvelteJS framework",
+          "backgroundUrl": "https://placehold.co/600x400",
           "technologies": [
             {
               "name": "SvelteJS",

@@ -263,6 +263,7 @@
         {
           "id": 8,
           "title": "Plataforma de seguimiento y monitoreo de placas vehículares detectadas V2 (Mejorada y migrada a SvelteJS)",
+          "backgroundUrl": "https://placehold.co/600x400",
           "description": "Plataforma y software de detección de placas que utiliza el algoritmo de inteligencia artificial YoloV8 para el reconocimiento de matrículas. Implementación de funcionalidades para estudiar y mapear patrones de comportamiento basados en la ubicación de los registros de matrículas dentro de la plataforma web utilizando el framework SvelteJS",
           "technologies": [
             {
