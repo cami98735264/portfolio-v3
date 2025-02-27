@@ -8,7 +8,7 @@ const removeAccents = (string: string) => {
 
 
 const isMainPage = (pathname: string) => {
-    return !pathname || pathname === '/en' || pathname === '/fr';
+    return pathname === "/" || pathname === '/en/' || pathname === '/fr/';
   }
 
 export { generateUrl, removeAccents, isMainPage };

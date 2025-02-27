@@ -13,7 +13,7 @@ import { generateUrl, removeAccents, isMainPage } from "../utils/utils";
 const locale = getLocale(Astro.url);
 let pathname = Astro.url.pathname;
 const translations = await loadTranslations(locale);
-
+console.log(pathname);
 let { navbarElements } = Astro.props;
 ---
 
@@ -45,7 +45,9 @@ let { navbarElements } = Astro.props;
   <div class="navbar__links__mobile">
     {
       navbarElements.links.map((link) => {
-        return <a href={`#${removeAccents(translations.navbar[link].toLowerCase())}`}>{translations.navbar[link]}</a>;
+        return <a href={`${isMainPage(pathname) ? `#${removeAccents(translations.navbar[link].toLowerCase())}` : 
+          `/${locale}/#${removeAccents(translations.navbar[link].toLowerCase())}`
+          }`}>{translations.navbar[link]}</a>;
       })
     }
   </div>

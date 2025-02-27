@@ -2,7 +2,8 @@
 import dot from "../assets/icons/dot.svg?url";
 interface Technology {
   name: string;
-  color: string;
+  backgroundColor: string;
+  textColor: string;
 }
 
 interface Props {
@@ -126,8 +127,8 @@ const { company, position, startDate, endDate, description, tasksList, technolog
             padding: "4px 16px",
             borderRadius: "10px",
             border: "1px solid #dedde2",
-            backgroundColor: technology.color,
-            color: "var(--copy)",
+            backgroundColor: technology.backgroundColor,
+            color: technology.textColor,
             fontSize: "clamp(0.8rem, 1vw, 1.2rem)",
           }}
           class="technology-label"

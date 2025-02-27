@@ -1,9 +1,9 @@
 import React from 'react';
 import Button from './Button.jsx';
 import arrowRight from '../assets/icons/arrow-right.svg?url';
-import { ShowMore } from '@re-dev/react-truncate'
+import { ShowMore } from '@re-dev/react-truncate';
 
-const Project = ({ projectTitle, projectDescription, projectId, projectImage }) => {
+const Project = ({ projectTitle, projectDescription, projectId, projectImage, viewText }) => {
     const styles = {
         container: {
             border: '2px solid var(--border)',
@@ -48,6 +48,7 @@ const Project = ({ projectTitle, projectDescription, projectId, projectImage }) 
 
         },
         description: {
+            width: '100%',
             fontWeight: 300,
             fontSize: 'clamp(1rem, 1.1vw, 1.5rem)',
             color: 'var(--copy-light)',
@@ -79,21 +80,22 @@ const Project = ({ projectTitle, projectDescription, projectId, projectImage }) 
                     <Button
                         flexConfig={{ enable: true, justify: 'center', align: 'center', gap: '16px' }}
                         buttonStyle={{ width: 'auto', variant: 'primary', size: 'small', border: false, borderRadius: 'medium', disabled: false }}
-                        href={`/projects/${projectId}`}
+                        href={`projects/${projectId}/`}
                     >
-                        <div style={styles.buttonText}>Ver proyecto</div>
+                        <div style={styles.buttonText}>{viewText}</div>
                         <img src={arrowRight} style={styles.arrowIcon} alt="Arrow Right" />
                     </Button>
                 </div>
                 <div>
                     <ShowMore
-                        lines={2}
+                        width={100}
+                        lines={3}
                         more="Mostrar más"
                         less="Mostrar menos"
                         anchorClass="show-more-less-anchor"
-                        style={{ color: 'var(--copy-light)'}}
+                        style={{ color: 'var(--copy-light)', width: '100%' }}
                     >
-                        <p style={styles.description}>{projectDescription}</p>
+                        <div style={styles.description}>{projectDescription}</div>
                     </ShowMore>
                 </div>
             </div>

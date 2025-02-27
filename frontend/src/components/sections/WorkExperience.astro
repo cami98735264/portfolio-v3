@@ -1,4 +1,19 @@
 ---
+interface Technology {
+  name: string;
+  backgroundColor: string;
+  textColor: string;
+}
+
+interface Experience {
+  company: string;
+  position: string;
+  startDate: string;
+  endDate: string;
+  description: string;
+  tasksList: string[];
+  technologiesList: Technology[];
+}
 import Experience from "../Experience.astro";
 import PageSection from "../PageSection.astro";
 import { loadTranslations } from "../../i18n";
@@ -19,117 +34,25 @@ let convertedId = removeAccents(translations.sections.experience.containerId).to
     gap: "24px",
   }}
   maxWidth="1680px"
+  padding="92px 48px"
 >
   <h2 data-aos="zoom-out">{translations.sections.experience.title}</h2>
   <p data-aos="zoom-in">
     {translations.sections.experience.description}
   </p>
   <div class="experiences__container">
-    <Experience
-      position="DESARROLLADOR FULL STACK"
-      company="Freelance"
-      startDate="Mayo 2021"
-      endDate="Actualidad"
-      description="Una plataforma deportiva desarrollada en ReactJS y ExpressJS, que ofrece una solución integral para la gestión de torneos deportivos."
-      tasksList={[
-        "Desarrollo de una plataforma full-stack con gestión de roles, enrutamiento y autenticación en ReactJS y ExpressJS para gestionar fases de torneos deportivos.",
-        "Diseño del flujo de registro y pago para torneos, permitiendo a los líderes de equipo registrarse y a los organizadores gestionar la participación de los equipos.",
-        "Desarrollo de módulos para la creación y gestión de fases de grupos y fases directas, incluyendo la asignación de roles a árbitros y atletas asociados con los líderes de equipo.",
-        "Implementación de diagramas dinámicos de llaves de torneo para visualizar las fases y los resultados de los partidos."
-      ]}
-      technologiesList={[
-        {
-          name: "React",
-          color: "darkblue",
-        },
-        {
-          name: "NodeJS",
-          color: "darkyellow",
-        },
-        {
-          name: "Express",
-          color: "orange",
-        },
-        {
-          name: "MongoDB",
-          color: "darkgreen",
-        },
-        {
-          name: "MySQL",
-          color: "#00758F",
-        },
-      ]}
-    />
-    <Experience
-      position="DESARROLLADOR FULL STACK"
-      company="Freelance"
-      startDate="Mayo 2021"
-      endDate="Actualidad"
-      description="Una plataforma deportiva desarrollada en ReactJS y ExpressJS, que ofrece una solución integral para la gestión de torneos deportivos."
-      tasksList={[
-        "Desarrollo de una plataforma full-stack con gestión de roles, enrutamiento y autenticación en ReactJS y ExpressJS para gestionar fases de torneos deportivos.",
-        "Diseño del flujo de registro y pago para torneos, permitiendo a los líderes de equipo registrarse y a los organizadores gestionar la participación de los equipos.",
-        "Desarrollo de módulos para la creación y gestión de fases de grupos y fases directas, incluyendo la asignación de roles a árbitros y atletas asociados con los líderes de equipo.",
-        "Implementación de diagramas dinámicos de llaves de torneo para visualizar las fases y los resultados de los partidos."
-      ]}
-      technologiesList={[
-        {
-          name: "React",
-          color: "darkblue",
-        },
-        {
-          name: "NodeJS",
-          color: "darkyellow",
-        },
-        {
-          name: "Express",
-          color: "orange",
-        },
-        {
-          name: "MongoDB",
-          color: "darkgreen",
-        },
-        {
-          name: "MySQL",
-          color: "#00758F",
-        },
-      ]}
-    />
-    <Experience
-      position="DESARROLLADOR FULL STACK"
-      company="Freelance"
-      startDate="Mayo 2021"
-      endDate="Actualidad"
-      description="Una plataforma deportiva desarrollada en ReactJS y ExpressJS, que ofrece una solución integral para la gestión de torneos deportivos."
-      tasksList={[
-        "Desarrollo de una plataforma full-stack con gestión de roles, enrutamiento y autenticación en ReactJS y ExpressJS para gestionar fases de torneos deportivos.",
-        "Diseño del flujo de registro y pago para torneos, permitiendo a los líderes de equipo registrarse y a los organizadores gestionar la participación de los equipos.",
-        "Desarrollo de módulos para la creación y gestión de fases de grupos y fases directas, incluyendo la asignación de roles a árbitros y atletas asociados con los líderes de equipo.",
-        "Implementación de diagramas dinámicos de llaves de torneo para visualizar las fases y los resultados de los partidos."
-      ]}
-      technologiesList={[
-        {
-          name: "React",
-          color: "darkblue",
-        },
-        {
-          name: "NodeJS",
-          color: "darkyellow",
-        },
-        {
-          name: "Express",
-          color: "orange",
-        },
-        {
-          name: "MongoDB",
-          color: "darkgreen",
-        },
-        {
-          name: "MySQL",
-          color: "#00758F",
-        },
-      ]}
-    />
+    {translations.sections.experience.experienceList.map((experience: Experience, index: number) => (
+      <Experience
+        position={experience.position}
+        company={experience.company}
+        startDate={experience.startDate}
+        endDate={experience.endDate}
+        description={experience.description}
+        tasksList={experience.tasksList}
+        technologiesList={experience.technologiesList}
+      />
+    ))
+    }
   </div>
 </PageSection>
 
