@@ -1,0 +1,15 @@
+---
+import { loadTranslations } from "../i18n";
+import { getLocale } from "astro-i18n-aut";
+const locale = getLocale(Astro.url);
+const translations = await loadTranslations(locale);
+const title = translations["404"].title;
+const backToHome = translations["404"].backToHome;
+let { text } = Astro.props;
+---
+
+
+<div class="404-container">
+    <h1>{title}</h1>
+    <p>{text}. <a href="/">{backToHome}</a></p>
+</div>

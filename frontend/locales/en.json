@@ -10,6 +10,11 @@
       }
     }
   },
+  "404": {
+    "title": "404",
+    "description": "Page not found",
+    "backToHome": "Back to home"
+  },
   "sections": {
     "aboutMe": {
       "containerId": "About me",
@@ -39,6 +44,22 @@
           "title": "Vehicle License Plate Detection and Monitoring Platform",
           "description": "Platform and detection software that uses the YoloV8 artificial intelligence algorithm for license plate recognition. Implementation of functionalities to study and map behavior patterns based on the location of license plate records within the web platform hosted in static files using ExpressJS.",
           "backgroundUrl": "https://placehold.co/600x400",
+          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "screenshots": [
+            "https://iili.io/33gZNwb.png",
+            "https://iili.io/33gZWc7.png",
+            "https://iili.io/33gZOtj.png",
+            "https://iili.io/33gZvMQ.png",
+            "https://iili.io/33gZ8PV.png",
+            "https://iili.io/33gZUKB.png",
+            "https://iili.io/33gZgcP.png",
+            "https://iili.io/33gZrS1.png",
+            "https://iili.io/33gZ6HF.png",
+            "https://iili.io/33gZiNa.png",
+            "https://iili.io/33gZbKN.png",
+            "https://iili.io/33gZZVR.png",
+            "https://iili.io/33gZmlI.jpg"
+          ],
           "technologies": [
             {
               "name": "ExpressJS",
@@ -67,6 +88,17 @@
           "title": "YoloV8 Vehicle License Plate Detection Software",
           "description": "Development of license plate recognition software using the YoloV8 artificial intelligence algorithm.",
           "backgroundUrl": "https://placehold.co/600x400",
+          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "screenshots": [
+            "https://iili.io/33gNYcN.png",
+            "https://iili.io/33gN0AX.png",
+            "https://iili.io/33gN7Fp.png",
+            "https://iili.io/33gNl9t.png",
+            "https://iili.io/33gNEts.png",
+            "https://iili.io/33gN1Nn.png",
+            "https://iili.io/33gNVVf.jpg",
+            "https://iili.io/33gNWP4.jpg"
+          ],
           "technologies": [
             {
               "name": "Python",
@@ -105,6 +137,31 @@
           "title": "Sports Tournament Management Platform",
           "description": "Development of a full-stack platform with role management, routing, and authentication in ReactJS and ExpressJS to manage each phase of sports tournaments, using advanced and dynamic validations with the express-validator library.",
           "backgroundUrl": "https://placehold.co/600x400",
+          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "screenshots": [
+            "https://iili.io/33rFs2a.png",
+            "https://iili.io/33rFQkv.png",
+            "https://iili.io/33rFLYJ.png",
+            "https://iili.io/33rFPrg.png",
+            "https://iili.io/33rFbhN.png",
+            "https://iili.io/33rFyBt.png",
+            "https://iili.io/33rK9EX.png",
+            "https://iili.io/33rKH4n.png",
+            "https://iili.io/33rK2YG.png",
+            "https://iili.io/33rKFp4.png",
+            "https://iili.io/33rKqj2.png",
+            "https://iili.io/33rKBQS.png",
+            "https://iili.io/33rKx4e.png",
+            "https://iili.io/33rKTYb.png",
+            "https://iili.io/33rKI3u.png",
+            "https://iili.io/33rKuvj.png",
+            "https://iili.io/33rK7jV.png",
+            "https://iili.io/33rKYZB.png",
+            "https://iili.io/33rKlG1.png",
+            "https://iili.io/33rK06F.png",
+            "https://iili.io/33rKE3g.png",
+            "https://iili.io/33rKM8J.png"
+          ],
           "technologies": [
             {
               "name": "ExpressJS",
@@ -133,6 +190,8 @@
           "title": "Natural Language to Sign Language Translator (Virtual Interpreter)",
           "description": "Development of an ExpressJS API to interpret Colombian sign language based on artificial intelligence using GPT-4 and the OpenAI API.",
           "backgroundUrl": "https://placehold.co/600x400",
+          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "screenshots": ["https://iili.io/33rxcOu.gif"],
           "technologies": [
             {
               "name": "ExpressJS",
@@ -166,6 +225,25 @@
           "title": "Alumni Tracking System",
           "description": "This software allows alumni to submit their education and jobs after graduation so the university can track statistics. I developed the application views in ReactJS, including both the landing page and dashboard system. I designed the UI/UX using the DaisyUI component library to ensure visual consistency throughout the product. On the backend, using ExpressJS, I included secure authentication systems and session management. Additionally, I integrated an external public API of data (universities in the country) to dynamically capture user response from inputs.",
           "backgroundUrl": "https://placehold.co/600x400",
+          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "screenshots": [
+            "https://iili.io/33gpqhu.png",
+            "https://iili.io/33gp3k7.png",
+            "https://iili.io/33gpFp9.png",
+            "https://iili.io/33gpd22.png",
+            "https://iili.io/33gpfIe.png",
+            "https://iili.io/33gpBLb.png",
+            "https://iili.io/33gpnBj.png",
+            "https://iili.io/33gpoEx.png",
+            "https://iili.io/33gpI2V.png",
+            "https://iili.io/33gpukP.png",
+            "https://iili.io/33gpTYB.png",
+            "https://iili.io/33gpAp1.png",
+            "https://iili.io/33gp5TF.png",
+            "https://iili.io/33gp7hg.png",
+            "https://iili.io/33gpcCJ.png",
+            "https://iili.io/33gpYQa.png"
+          ],
           "technologies": [
             {
               "name": "ExpressJS",
@@ -199,6 +277,22 @@
           "title": "Veterinary System",
           "description": "I designed and developed the registration and login module, including the creation of the application's UI/UX. I implemented a CRUD system to manage pet appointments, integrating dynamic data from the database such as animal type and consultation type (surgery, check-up, accident, etc.). The system was configured to include consultation prices and display relevant data on screen. Advanced functionalities were integrated to improve the management and presentation of crucial information for veterinary practice.",
           "backgroundUrl": "https://placehold.co/600x400",
+          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "screenshots": [
+            "https://iili.io/33rCQzx.png",
+            "https://iili.io/33rCsbj.png",
+            "https://iili.io/33rCZWQ.png",
+            "https://iili.io/33rCP5u.png",
+            "https://iili.io/33rCm0P.png",
+            "https://iili.io/33rCpg1.png",
+            "https://iili.io/33rnJea.png",
+            "https://iili.io/33rndmJ.png",
+            "https://iili.io/33rnqqN.png",
+            "https://iili.io/33rnB1I.png",
+            "https://iili.io/33rnCgt.png",
+            "https://iili.io/33rnodX.png",
+            "https://iili.io/33rnzes.png"
+          ],
           "technologies": [
             {
               "name": "ExpressJS",
@@ -232,6 +326,19 @@
           "title": "Advanced Authentication for a Sensor Platform",
           "description": "During the development of the sensor system, I created a complete login and registration system using ExpressJS and email authentication. This included implementing functionality to send login codes via email using Google application temporary credentials and the Nodemailer library. On the frontend, built with ReactJS and DaisyUI, these dynamic login codes were sent to users via email and seamlessly integrated into the login form, ensuring a smooth and secure authentication process.",
           "backgroundUrl": "https://placehold.co/600x400",
+          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "screenshots": [
+            "https://iili.io/33rdx5l.png",
+            "https://iili.io/33rdoJ4.png",
+            "https://iili.io/33rdze2.png",
+            "https://iili.io/33rdCgf.png",
+            "https://iili.io/33rdIbS.png",
+            "https://iili.io/33rduz7.png",
+            "https://iili.io/33rdAX9.png",
+            "https://iili.io/33rdRse.png",
+            "https://iili.io/33rd7qu.png",
+            "https://iili.io/33rdY0b.png"
+          ],
           "technologies": [
             {
               "name": "ExpressJS",
@@ -265,6 +372,7 @@
           "title": "Vehicle License Plate Detection and Monitoring Platform V2 (Improved and migrated to SvelteJS)",
           "description": "Platform and detection software that uses the YoloV8 artificial intelligence algorithm for license plate recognition. Implementation of functionalities to study and map behavior patterns based on the location of license plate records within the web platform using the SvelteJS framework",
           "backgroundUrl": "https://placehold.co/600x400",
+          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
           "technologies": [
             {
               "name": "SvelteJS",
@@ -293,6 +401,7 @@
           "title": "Portfolio V1",
           "description": "Development and first design of my first personal portfolio using Astro to showcase my projects and technologies.",
           "backgroundUrl": "https://placehold.co/600x400",
+          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
           "technologies": [
             {
               "name": "Astro",
@@ -311,6 +420,7 @@
           "title": "Portfolio V2",
           "description": "Development and second design of my personal portfolio using Astro to showcase my projects and technologies.",
           "backgroundUrl": "https://placehold.co/600x400",
+          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
           "technologies": [
             {
               "name": "Astro",
@@ -329,6 +439,7 @@
           "title": "Portfolio V3",
           "description": "Development and third design of my personal portfolio using Astro to showcase my projects and technologies.",
           "backgroundUrl": "https://placehold.co/600x400",
+          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
           "technologies": [
             {
               "name": "Astro",
@@ -370,135 +481,135 @@
       "title": "Work experience",
       "description": "With a trajectory of +1 year of experience, I have designed information systems in different business areas, certifying my knowledge in the creation and deployment of full stack applications.",
       "experienceList": [
-    {
-      "company": "PayBluem",
-      "position": "Full Stack Developer",
-      "startDate": "May 2021",
-      "endDate": "Present",
-      "description": "A sports platform developed in ReactJS and ExpressJS, offering a comprehensive solution for sports tournaments.",
-      "tasksList": [
-        "Development of a full-stack platform with role management, routing, and authentication in ReactJS and ExpressJS.",
-        "Design of the registration and payment flow for tournaments, allowing team leaders to register and organize events.",
-        "Development of modules for the creation and management of group stages and knockout rounds, including the generation of tournament brackets.",
-        "Implementation of dynamic tournament bracket diagrams to visualize phases and match results."
-      ],
-      "technologiesList": [
         {
-          "name": "ExpressJS",
-          "backgroundColor": "#404D59",
-          "textColor": "#FFFFFF"
+          "company": "PayBluem",
+          "position": "Full Stack Developer",
+          "startDate": "May 2021",
+          "endDate": "Present",
+          "description": "A sports platform developed in ReactJS and ExpressJS, offering a comprehensive solution for sports tournaments.",
+          "tasksList": [
+            "Development of a full-stack platform with role management, routing, and authentication in ReactJS and ExpressJS.",
+            "Design of the registration and payment flow for tournaments, allowing team leaders to register and organize events.",
+            "Development of modules for the creation and management of group stages and knockout rounds, including the generation of tournament brackets.",
+            "Implementation of dynamic tournament bracket diagrams to visualize phases and match results."
+          ],
+          "technologiesList": [
+            {
+              "name": "ExpressJS",
+              "backgroundColor": "#404D59",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "name": "NodeJS",
+              "backgroundColor": "#68A063",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "name": "MySQL",
+              "backgroundColor": "#F29111",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "name": "JavaScript",
+              "backgroundColor": "#F7DF1E",
+              "textColor": "#000000"
+            },
+            {
+              "name": "ReactJS",
+              "backgroundColor": "#61DAFB",
+              "textColor": "#000000"
+            }
+          ]
         },
         {
-          "name": "NodeJS",
-          "backgroundColor": "#68A063",
-          "textColor": "#FFFFFF"
+          "company": "PayBluem",
+          "position": "Full Stack Developer",
+          "startDate": "January 2024",
+          "endDate": "April 2024",
+          "description": "Platform and software for vehicle license plate recognition using artificial intelligence.",
+          "tasksList": [
+            "Development of software for license plate recognition using the YoloV8 AI algorithm.",
+            "Implementation of functionalities to study and map behavior patterns based on the location of license plate records within the web platform, hosted as static files using ExpressJS."
+          ],
+          "technologiesList": [
+            {
+              "name": "YoloV8",
+              "backgroundColor": "#222222",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "name": "Python",
+              "backgroundColor": "#3776AB",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "name": "OpenCV",
+              "backgroundColor": "#5C3EE8",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "name": "TensorFlow",
+              "backgroundColor": "#FF6F00",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "name": "MySQL",
+              "backgroundColor": "#F29111",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "name": "Flask",
+              "backgroundColor": "#000000",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "name": "Ultralytics",
+              "backgroundColor": "#2C2C2C",
+              "textColor": "#FFFFFF"
+            }
+          ]
         },
         {
-          "name": "MySQL",
-          "backgroundColor": "#F29111",
-          "textColor": "#FFFFFF"
-        },
-        {
-          "name": "JavaScript",
-          "backgroundColor": "#F7DF1E",
-          "textColor": "#000000"
-        },
-        {
-          "name": "ReactJS",
-          "backgroundColor": "#61DAFB",
-          "textColor": "#000000"
+          "company": "PayBluem",
+          "position": "Full Stack Developer",
+          "startDate": "July 2023",
+          "endDate": "December 2023",
+          "description": "Platform for Colombian Sign Language interpretation using artificial intelligence with GPT-4 and the OpenAI API.",
+          "screenshots": ["https://iili.io/33rxcOu.gif"],
+          "tasksList": [
+            "Development of an API in ExpressJS to interpret Colombian Sign Language based on AI using GPT-4 and the OpenAI API.",
+            "Implementation of a system to translate natural language text into Colombian Sign Language, displayed by an interpreter on a green screen within a web platform built in NextJS.",
+            "Development and optimization of algorithms for natural language processing and sign recognition to ensure accurate and fluent translation."
+          ],
+          "technologiesList": [
+            {
+              "name": "ExpressJS",
+              "backgroundColor": "#404D59",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "name": "NodeJS",
+              "backgroundColor": "#68A063",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "name": "MySQL",
+              "backgroundColor": "#F29111",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "name": "JavaScript",
+              "backgroundColor": "#F7DF1E",
+              "textColor": "#000000"
+            },
+            {
+              "name": "NextJS",
+              "backgroundColor": "#000000",
+              "textColor": "#FFFFFF"
+            }
+          ]
         }
       ]
-    },
-    {
-      "company": "PayBluem",
-      "position": "Full Stack Developer",
-      "startDate": "January 2024",
-      "endDate": "April 2024",
-      "description": "Platform and software for vehicle license plate recognition using artificial intelligence.",
-      "tasksList": [
-        "Development of software for license plate recognition using the YoloV8 AI algorithm.",
-        "Implementation of functionalities to study and map behavior patterns based on the location of license plate records within the web platform, hosted as static files using ExpressJS."
-      ],
-      "technologiesList": [
-        {
-          "name": "YoloV8",
-          "backgroundColor": "#222222",
-          "textColor": "#FFFFFF"
-        },
-        {
-          "name": "Python",
-          "backgroundColor": "#3776AB",
-          "textColor": "#FFFFFF"
-        },
-        {
-          "name": "OpenCV",
-          "backgroundColor": "#5C3EE8",
-          "textColor": "#FFFFFF"
-        },
-        {
-          "name": "TensorFlow",
-          "backgroundColor": "#FF6F00",
-          "textColor": "#FFFFFF"
-        },
-        {
-          "name": "MySQL",
-          "backgroundColor": "#F29111",
-          "textColor": "#FFFFFF"
-        },
-        {
-          "name": "Flask",
-          "backgroundColor": "#000000",
-          "textColor": "#FFFFFF"
-        },
-        {
-          "name": "Ultralytics",
-          "backgroundColor": "#2C2C2C",
-          "textColor": "#FFFFFF"
-        }
-      ]
-    },
-    {
-      "company": "PayBluem",
-      "position": "Full Stack Developer",
-      "startDate": "July 2023",
-      "endDate": "December 2023",
-      "description": "Platform for Colombian Sign Language interpretation using artificial intelligence with GPT-4 and the OpenAI API.",
-      "tasksList": [
-        "Development of an API in ExpressJS to interpret Colombian Sign Language based on AI using GPT-4 and the OpenAI API.",
-        "Implementation of a system to translate natural language text into Colombian Sign Language, displayed by an interpreter on a green screen within a web platform built in NextJS.",
-        "Development and optimization of algorithms for natural language processing and sign recognition to ensure accurate and fluent translation."
-      ],
-      "technologiesList": [
-        {
-          "name": "ExpressJS",
-          "backgroundColor": "#404D59",
-          "textColor": "#FFFFFF"
-        },
-        {
-          "name": "NodeJS",
-          "backgroundColor": "#68A063",
-          "textColor": "#FFFFFF"
-        },
-        {
-          "name": "MySQL",
-          "backgroundColor": "#F29111",
-          "textColor": "#FFFFFF"
-        },
-        {
-          "name": "JavaScript",
-          "backgroundColor": "#F7DF1E",
-          "textColor": "#000000"
-        },
-        {
-          "name": "NextJS",
-          "backgroundColor": "#000000",
-          "textColor": "#FFFFFF"
-        }
-      ]
-    }
-  ]
-
     }
   }
 }

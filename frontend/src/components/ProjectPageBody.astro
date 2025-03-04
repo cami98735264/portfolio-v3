@@ -1,0 +1,41 @@
+---
+let { projectInfo } = Astro.props
+---
+
+<div class="images-container">
+  <div class="item">Item 1 (100% width)</div>
+  <div class="item">Item 2 (50% width)</div>
+  <div class="item">Item 3 (50% width)</div>
+  <div class="item">Item 4 (100% width)</div>
+  <div class="item">Item 5 (50% width)</div>
+  <div class="item">Item 6 (50% width)</div>
+  <div class="item">Item 7 (100% width)</div>
+  <div class="item">Item 8 (50% width)</div>
+</div>
+
+
+<style>
+    .images-container {
+      width: 100%;
+      padding: 80px 60px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 0 auto;
+    }
+  
+    .item {
+      border-radius: 12px;
+      flex: calc(50% - 5px);
+      height: 500px;
+      background-color: #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    /* Cada tercer elemento ocupará 100% del ancho */
+    .item:nth-child(3n) {
+      flex: 100%;
+    }
+  </style>

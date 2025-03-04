@@ -1,0 +1,42 @@
+---
+interface Technology {
+  name: string;
+  backgroundColor: string;
+  textColor: string;
+}
+
+interface Project {
+  id: number | string;
+  title: string;
+  description: string;
+  backgroundUrl: string;
+  technologies: Technology[];
+}
+
+import PageSection from "../PageSection.astro";
+import ProjectPageHeader from "../ProjectPageHeader.astro";
+const { projectId } = Astro.params;
+import { loadTranslations } from "../../i18n";
+import { getLocale } from "astro-i18n-aut";
+import Container404 from "../Container404.astro";
+import ProjectPageBody from "../ProjectPageBody.astro";
+const locale = getLocale(Astro.url);
+const translations = await loadTranslations(locale);
+let projectInfo = translations.sections.projects.list.find((project: Project) => project.id == projectId);
+---
+
+
+<PageSection
+  id="project-page"
+  fixedHeight={false}
+  flexConfig={{
+    enable: true,
+    direction: "column",
+    gap: "16px",
+  }}
+  margin="76px 0"
+  mobileMargin="60px 0"
+  maxWidth="1680px">
+{projectInfo ? <ProjectPageHeader projectInfo={projectInfo}/>
+<ProjectPageBody /> : <Container404 text="Project not found!" />}
+</PageSection>

@@ -10,6 +10,10 @@
       }
     }
   },
+  "404": {
+    "title": "Página no encontrada",
+    "backToHome": "Volver a la página de inicio"
+  },
   "sections": {
     "aboutMe": {
       "containerId": "Sobre mí",
@@ -39,6 +43,22 @@
           "title": "Plataforma de seguimiento y monitoreo de placas vehículares detectadas",
           "description": "Plataforma y software de detección de placas que utiliza el algoritmo de inteligencia artificial YoloV8 para el reconocimiento de matrículas. Implementación de funcionalidades para estudiar y mapear patrones de comportamiento basados en la ubicación de los registros de matrículas dentro de la plataforma web alojada en archivos estáticos usando ExpressJS.",
           "backgroundUrl": "https://placehold.co/600x400",
+          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "screenshots": [
+            "https://iili.io/33gZNwb.png",
+            "https://iili.io/33gZWc7.png",
+            "https://iili.io/33gZOtj.png",
+            "https://iili.io/33gZvMQ.png",
+            "https://iili.io/33gZ8PV.png",
+            "https://iili.io/33gZUKB.png",
+            "https://iili.io/33gZgcP.png",
+            "https://iili.io/33gZrS1.png",
+            "https://iili.io/33gZ6HF.png",
+            "https://iili.io/33gZiNa.png",
+            "https://iili.io/33gZbKN.png",
+            "https://iili.io/33gZZVR.png",
+            "https://iili.io/33gZmlI.jpg"
+          ],
           "technologies": [
             {
               "name": "ExpressJS",
@@ -67,6 +87,17 @@
           "title": "Software de detección de placas vehículares YoloV8",
           "description": "Desarrollo de software de reconocimiento de matrículas utilizando el algoritmo de inteligencia artificial YoloV8.",
           "backgroundUrl": "https://placehold.co/600x400",
+          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "screenshots": [
+            "https://iili.io/33gNYcN.png",
+            "https://iili.io/33gN0AX.png",
+            "https://iili.io/33gN7Fp.png",
+            "https://iili.io/33gNl9t.png",
+            "https://iili.io/33gNEts.png",
+            "https://iili.io/33gN1Nn.png",
+            "https://iili.io/33gNVVf.jpg",
+            "https://iili.io/33gNWP4.jpg"
+          ],
           "technologies": [
             {
               "name": "Python",
@@ -105,6 +136,31 @@
           "title": "Plataforma deportiva para gestión de torneos",
           "description": "Desarrollo de una plataforma full-stack con gestión de roles, enrutamiento y autenticación en ReactJS y ExpressJS para gestionar cada fase de los torneos deportivos, utilizando validaciones avanzadas y dinámicas con la biblioteca express-validator.",
           "backgroundUrl": "https://placehold.co/600x400",
+          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "screenshots": [
+            "https://iili.io/33rFs2a.png",
+            "https://iili.io/33rFQkv.png",
+            "https://iili.io/33rFLYJ.png",
+            "https://iili.io/33rFPrg.png",
+            "https://iili.io/33rFbhN.png",
+            "https://iili.io/33rFyBt.png",
+            "https://iili.io/33rK9EX.png",
+            "https://iili.io/33rKH4n.png",
+            "https://iili.io/33rK2YG.png",
+            "https://iili.io/33rKFp4.png",
+            "https://iili.io/33rKqj2.png",
+            "https://iili.io/33rKBQS.png",
+            "https://iili.io/33rKx4e.png",
+            "https://iili.io/33rKTYb.png",
+            "https://iili.io/33rKI3u.png",
+            "https://iili.io/33rKuvj.png",
+            "https://iili.io/33rK7jV.png",
+            "https://iili.io/33rKYZB.png",
+            "https://iili.io/33rKlG1.png",
+            "https://iili.io/33rK06F.png",
+            "https://iili.io/33rKE3g.png",
+            "https://iili.io/33rKM8J.png"
+          ],
           "technologies": [
             {
               "name": "ExpressJS",
@@ -133,6 +189,8 @@
           "title": "Traductor de lenguaje natural a lenguaje de señas (interprete virtual)",
           "description": "Desarrollo de una API en ExpressJS para interpretar el lenguaje de señas colombiano basada en inteligencia artificial utilizando GPT-4 y la API de OpenAI.",
           "backgroundUrl": "https://placehold.co/600x400",
+          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "screenshots": ["https://iili.io/33rxcOu.gif"],
           "technologies": [
             {
               "name": "ExpressJS",
@@ -166,6 +224,25 @@
           "title": "Sistema para seguimiento de egresados",
           "description": "Este software permite a los egresados enviar su educación y trabajos después de graduarse para que la universidad pueda realizar un seguimiento de las estadísticas. Desarrollé las vistas de la aplicación en ReactJS, incluyendo tanto la página de inicio como el sistema de panel de control. Diseñé la UI/UX utilizando la biblioteca de componentes DaisyUI para asegurar la consistencia visual en todo el producto. En el backend, utilizando ExpressJS, incluí sistemas de autenticación segura y gestión de sesiones. Además, integré una API pública externa de datos (universidades en el país) para capturar dinámicamente la respuesta del usuario desde los inputs.",
           "backgroundUrl": "https://placehold.co/600x400",
+          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "screenshots": [
+            "https://iili.io/33gpqhu.png",
+            "https://iili.io/33gp3k7.png",
+            "https://iili.io/33gpFp9.png",
+            "https://iili.io/33gpd22.png",
+            "https://iili.io/33gpfIe.png",
+            "https://iili.io/33gpBLb.png",
+            "https://iili.io/33gpnBj.png",
+            "https://iili.io/33gpoEx.png",
+            "https://iili.io/33gpI2V.png",
+            "https://iili.io/33gpukP.png",
+            "https://iili.io/33gpTYB.png",
+            "https://iili.io/33gpAp1.png",
+            "https://iili.io/33gp5TF.png",
+            "https://iili.io/33gp7hg.png",
+            "https://iili.io/33gpcCJ.png",
+            "https://iili.io/33gpYQa.png"
+          ],
           "technologies": [
             {
               "name": "ExpressJS",
@@ -199,6 +276,22 @@
           "title": "Sistema de veterinaria",
           "description": "Diseñé y desarrollé el módulo de registro e inicio de sesión, incluyendo la creación de la UI/UX de la aplicación. Implementé un sistema CRUD para gestionar las citas de mascotas, integrando datos dinámicos de la base de datos como el tipo de animal y el tipo de consulta (cirugía, revisión, accidente, etc.). El sistema fue configurado para incluir los precios de las consultas y mostrar los datos relevantes en la pantalla. Se integraron funcionalidades avanzadas para mejorar la gestión y presentación de información crucial para la práctica veterinaria.",
           "backgroundUrl": "https://placehold.co/600x400",
+          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "screenshots": [
+            "https://iili.io/33rCQzx.png",
+            "https://iili.io/33rCsbj.png",
+            "https://iili.io/33rCZWQ.png",
+            "https://iili.io/33rCP5u.png",
+            "https://iili.io/33rCm0P.png",
+            "https://iili.io/33rCpg1.png",
+            "https://iili.io/33rnJea.png",
+            "https://iili.io/33rndmJ.png",
+            "https://iili.io/33rnqqN.png",
+            "https://iili.io/33rnB1I.png",
+            "https://iili.io/33rnCgt.png",
+            "https://iili.io/33rnodX.png",
+            "https://iili.io/33rnzes.png"
+          ],
           "technologies": [
             {
               "name": "ExpressJS",
@@ -232,6 +325,19 @@
           "title": "Autenticación avanzada para una plataforma de sensores",
           "description": "Durante el desarrollo del sistema de sensores, creé un sistema de inicio de sesión y registro completo utilizando ExpressJS y autenticación por correo electrónico. Esto incluyó implementar la funcionalidad para enviar códigos de inicio de sesión por correo electrónico utilizando credenciales temporales de aplicaciones de Google y la biblioteca Nodemailer. En el frontend, construido con ReactJS y DaisyUI, estos códigos de inicio de sesión dinámicos se enviaron a los usuarios por correo electrónico e integraron sin problemas en el formulario de inicio de sesión, asegurando un proceso de autenticación fluido y seguro.",
           "backgroundUrl": "https://placehold.co/600x400",
+          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "screenshots": [
+            "https://iili.io/33rdx5l.png",
+            "https://iili.io/33rdoJ4.png",
+            "https://iili.io/33rdze2.png",
+            "https://iili.io/33rdCgf.png",
+            "https://iili.io/33rdIbS.png",
+            "https://iili.io/33rduz7.png",
+            "https://iili.io/33rdAX9.png",
+            "https://iili.io/33rdRse.png",
+            "https://iili.io/33rd7qu.png",
+            "https://iili.io/33rdY0b.png"
+          ],
           "technologies": [
             {
               "name": "ExpressJS",
@@ -265,6 +371,7 @@
           "title": "Plataforma de seguimiento y monitoreo de placas vehículares detectadas V2 (Mejorada y migrada a SvelteJS)",
           "backgroundUrl": "https://placehold.co/600x400",
           "description": "Plataforma y software de detección de placas que utiliza el algoritmo de inteligencia artificial YoloV8 para el reconocimiento de matrículas. Implementación de funcionalidades para estudiar y mapear patrones de comportamiento basados en la ubicación de los registros de matrículas dentro de la plataforma web utilizando el framework SvelteJS",
+          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
           "technologies": [
             {
               "name": "SvelteJS",
@@ -293,6 +400,7 @@
           "title": "Portafolio V1",
           "description": "Desarrollo y primer diseño de mi primer portafolio personal utilizando Astro para mostrar mis proyectos y tecnologías.",
           "backgroundUrl": "https://placehold.co/600x400",
+          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
           "technologies": [
             {
               "name": "Astro",
@@ -311,6 +419,7 @@
           "title": "Portafolio V2",
           "description": "Desarrollo y segundo diseño de mi portafolio personal utilizando Astro para mostrar mis proyectos y tecnologías.",
           "backgroundUrl": "https://placehold.co/600x400",
+          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
           "technologies": [
             {
               "name": "Astro",
@@ -329,6 +438,7 @@
           "title": "Portafolio V3",
           "description": "Desarrollo y tercer diseño de mi portafolio personal utilizando Astro para mostrar mis proyectos y tecnologías.",
           "backgroundUrl": "https://placehold.co/600x400",
+          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
           "technologies": [
             {
               "name": "Astro",
