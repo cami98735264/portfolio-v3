@@ -1,7 +1,7 @@
 ---
 import Layout from "../../../layouts/Layout.astro";
 import Navbar from "../../../components/Navbar.astro";
-import navbarElements from "../../../utils/navbarElements";
+import { navbarElements, footerElements } from "../../../utils/linkElements";
 import ProjectPage from "../../../components/sections/ProjectPage.astro";
 import Footer from "../../../components/Footer.astro";
 ---
@@ -11,6 +11,6 @@ import Footer from "../../../components/Footer.astro";
 <Layout>
     <Navbar navbarElements={navbarElements} />
     <ProjectPage/>
-    <Footer/>
+    <Footer footerElements={navbarElements}/>
 </Layout>
 

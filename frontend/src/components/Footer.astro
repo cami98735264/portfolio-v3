@@ -4,6 +4,9 @@ import GithubIcon from "../assets/icons/github.svg?url";
 import LinkedinIcon from "../assets/icons/linkedin.svg?url";
 import WhatsappIcon from "../assets/icons/whatsapp.svg?url";
 import GmailIcon from "../assets/icons/gmail.svg?url";
+import { removeAccents, isMainPage } from "../utils/utils";
+let pathname = Astro.url.pathname;
+let { footerElements } = Astro.props;
 import { loadTranslations } from "../i18n";
 import { getLocale } from "astro-i18n-aut";
 const locale = getLocale(Astro.url);
@@ -28,10 +31,13 @@ const translations = await loadTranslations(locale);
       </a>
     </div>
     <div class="footer-nav">
-      <a href="#projects">{translations.footer.projects}</a>
-      <a href="#technologies">{translations.footer.technologies}</a>
-      <a href="#experience">{translations.footer.experience}</a>
-      <a href="#contact">{translations.footer.contact}</a>
+      {
+        footerElements.links.map((link: string) => {
+          return <a href={`${isMainPage(pathname) ? `#${removeAccents(translations.footer[link].toLowerCase())}` : 
+            `/${locale}/#${removeAccents(translations.footer[link].toLowerCase())}`
+            }`}>{translations.footer[link]}</a>;
+        })
+      }
     </div>
     <div class="footer-copy">
       <p>&copy; {new Date().getFullYear()} Cristián Camilo Rodríguez Montealegre. All rights reserved.</p>
