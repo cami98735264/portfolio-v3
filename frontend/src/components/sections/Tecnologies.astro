@@ -7,7 +7,12 @@ import { removeAccents } from "../../utils/utils";
 const locale = getLocale(Astro.url);
 const translations = await loadTranslations(locale);
 let convertedId = removeAccents(translations.sections.technologies.containerId).toLowerCase().split(" ").join("-");
-let totalTechnologies = translations.sections.technologies.categories.frontend.length + translations.sections.technologies.categories.backend.length + translations.sections.technologies.categories.databases.length + translations.sections.technologies.categories.designTools.length + translations.sections.technologies.categories.deployment.length;
+let frontendTechnologies = ["html5", "react", "vitejs", "css3", "svelte", "nextjs", "astro"];
+let backendTechnologies = ["express", "nodejs", "python"];
+let databasesTechnologies = ["mysql", "mongodb", "oracle", "postgresql"];
+let designToolsTechnologies = ["figma"];
+let deploymentTechnologies = ["AWS-EC2", "AWS-S3", "Hostinger", "Netlify", "CPanel", "Render", "Vercel"];
+let totalTechnologies = frontendTechnologies.length + backendTechnologies.length + databasesTechnologies.length + designToolsTechnologies.length + deploymentTechnologies.length;
 ---
 
 
@@ -22,11 +27,11 @@ let totalTechnologies = translations.sections.technologies.categories.frontend.l
     <div id="project__header__label" data-aos="zoom-out"><span style="color: var(--secondary);">{totalTechnologies}</span> {translations.sections.technologies.count.description}</div>
     <p data-aos="zoom-out">{translations.sections.technologies.description}</p>
     <div class="technologies__list__container">
-        <TechnologiesList title={translations.sections.technologies.categories.frontend} technologiesList={["html5", "react", "vitejs", "css3", "svelte", "nextjs", "astro"]} />
-        <TechnologiesList title={translations.sections.technologies.categories.backend} technologiesList={["express", "nodejs", "python"]} />
-        <TechnologiesList title={translations.sections.technologies.categories.databases} technologiesList={["mysql", "mongodb", "oracle", "postgresql"]} />
-        <TechnologiesList title={translations.sections.technologies.categories.designTools} technologiesList={["figma"]} />
-        <TechnologiesList title={translations.sections.technologies.categories.deployment} technologiesList={["AWS-EC2", "AWS-S3", "Hostinger", "Netlify", "CPanel", "Render", "Vercel"]} localeIcon={true}/>
+        <TechnologiesList title={translations.sections.technologies.categories.frontend} technologiesList={frontendTechnologies} />
+        <TechnologiesList title={translations.sections.technologies.categories.backend} technologiesList={backendTechnologies} />
+        <TechnologiesList title={translations.sections.technologies.categories.databases} technologiesList={databasesTechnologies} />
+        <TechnologiesList title={translations.sections.technologies.categories.designTools} technologiesList={designToolsTechnologies} />
+        <TechnologiesList title={translations.sections.technologies.categories.deployment} technologiesList={deploymentTechnologies} localeIcon={true}/>
 
 
     </div>
