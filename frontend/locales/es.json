@@ -616,8 +616,8 @@
         {
           "company": "PayBluem",
           "position": "Desarrollador Full Stack",
-          "startDate": "Mayo 2021",
-          "endDate": "Actualidad",
+          "startDate": "Mayo 2024",
+          "endDate": "Diciembre 2024",
           "description": "Una plataforma deportiva desarrollada en ReactJS y ExpressJS, que ofrece una solución integral para torneos deportivos.",
           "tasksList": [
             "Desarrollo de una plataforma full-stack con gestión de roles, enrutamiento y autenticación en ReactJS y ExpressJS.",
