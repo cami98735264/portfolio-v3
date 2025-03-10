@@ -38,12 +38,16 @@ const Project = ({ projectTitle, projectDescription, projectId, projectImage, vi
             color: 'var(--copy-light)',
         },
         imageContainer: {
+            backgroundColor: '#fff',
             flex: 1,
+            maxHeight: '450px',
+            border: '2px solid var(--border)',
+            borderRadius: '8px',
         },
         image: {
             width: '100%',
             height: '450px',
-            objectFit: 'cover',
+            objectFit: 'contain',
             borderRadius: '8px',
 
         },

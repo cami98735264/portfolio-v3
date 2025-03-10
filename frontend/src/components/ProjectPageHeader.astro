@@ -6,15 +6,16 @@ interface Technology {
 }
 
 import TechnologyLabel from "./TechnologyLabel.astro";
-
+import GithubIcon from "../assets/icons/github.svg?url";
+import Globe from "../assets/icons/globe.svg?url";
 let { projectInfo } = Astro.props;
-let { backgroundUrl, technologies } = projectInfo;
+let { backgroundUrl, technologies, viewGithub, viewOnline, githubUrl, onlineUrl } = projectInfo;
 ---
 
 <div class="project-page-header">
   <div
     class="project-background-image"
-    style={`background: url(${backgroundUrl}) var(--foreground) no-repeat center center / cover;`}
+    style={`background: url(${backgroundUrl}) #fff no-repeat center center / contain; border: 1px solid var(--border);`}
   >
   </div>
   <div class="project-header-content-container">
@@ -35,6 +36,20 @@ let { backgroundUrl, technologies } = projectInfo;
         <p>
           {projectInfo.description}
         </p>
+        <div class="project-header-buttons">
+          {onlineUrl && <a href={onlineUrl} class="button" target="_blank" id="viewOnlineButton">
+            <img src={Globe} alt="Globe" /> <span>{viewOnline}</span>
+          </a>}
+          {githubUrl?.frontend && (githubUrl.frontend !== githubUrl.backend) && <a href={githubUrl?.frontend} target="_blank" id="githubButton" class="button">
+            <img src={GithubIcon} alt="Github" /> <span>{viewGithub} (frontend)</span>
+          </a>}
+          {githubUrl?.backend && (githubUrl.frontend !== githubUrl.backend) && <a href={githubUrl?.frontend} target="_blank" id="githubButton" class="button">
+            <img src={GithubIcon} alt="Github" /> <span>{viewGithub} (backend)</span>
+          </a>}
+          {githubUrl?.backend && githubUrl?.frontend && (githubUrl.backend === githubUrl.frontend) && <a href={githubUrl?.frontend} target="_blank" id="githubButton" class="button">
+            <img src={GithubIcon} alt="Github" /> <span>{viewGithub} (backend & frontend)</span>
+          </a>}
+        </div>
       </div>
     </div>
   </div>
@@ -70,8 +85,38 @@ let { backgroundUrl, technologies } = projectInfo;
     gap: 24px;
     flex: 1;
   }
-
+  .project-header-buttons {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 8px;
+  }
+  .project-header-buttons a {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: var(--foreground);
+    border: 1px solid var(--border);
+    color: var(--copy);
+    font-size: var(--font-size-description);
+    transition: background-color 0.2s;
+  }
+  .project-header-buttons a:hover {
+    background-color: var(--background);
+  }
+  .project-header-buttons a img {
+    width: 24px;
+    height: 24px;
+  }
+  .project-header-buttons a span {
+    font-size: var(--font-size-description);
+    color: var(--copy);
+  }
   .project-header-content-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     flex: 1;
   }
 
@@ -94,6 +139,12 @@ let { backgroundUrl, technologies } = projectInfo;
   }
 
   @media (max-width: 880px) {
+    .project-header-buttons {
+      gap: 4px;
+    }
+    .project-page-header {
+      height: auto;
+    }
     h1 {
       line-height: 1.3;
     }

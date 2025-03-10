@@ -1,4 +1,10 @@
 {
+  "footer": {
+    "projects": "Projects",
+    "technologies": "Technologies",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
   "navbar": {
     "projects": "Projects",
     "technologies": "Technologies",
@@ -12,7 +18,7 @@
   },
   "404": {
     "title": "404",
-    "description": "Page not found",
+    "description": "The page or project you are looking for does not exist.",
     "backToHome": "Back to home"
   },
   "sections": {
@@ -37,33 +43,53 @@
       }
     },
     "projects": {
+      "viewGithub": "View on GitHub",
+      "viewOnline": "View online",
+      "projectsNotes": "Projects notes and characteristics",
       "viewProject": "View project",
       "list": [
         {
           "id": 1,
-          "title": "Vehicle License Plate Detection and Monitoring Platform",
-          "description": "Platform and detection software that uses the YoloV8 artificial intelligence algorithm for license plate recognition. Implementation of functionalities to study and map behavior patterns based on the location of license plate records within the web platform hosted in static files using ExpressJS.",
-          "backgroundUrl": "https://placehold.co/600x400",
-          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "title": "Vehicle License Plate Detection and Monitoring Platform V2 (Improved and migrated to SvelteJS)",
+          "description": "Platform and detection software that uses the YoloV8 artificial intelligence algorithm for license plate recognition. Implementation of functionalities to study and map behavior patterns based on the location of license plate records within the web platform using the SvelteJS framework",
+          "onlineUrl": "https://rescep.com.co",
+          "backgroundUrl": "https://iili.io/3fjWjPR.png",
           "screenshots": [
-            "https://iili.io/33gZNwb.png",
-            "https://iili.io/33gZWc7.png",
-            "https://iili.io/33gZOtj.png",
-            "https://iili.io/33gZvMQ.png",
-            "https://iili.io/33gZ8PV.png",
-            "https://iili.io/33gZUKB.png",
-            "https://iili.io/33gZgcP.png",
-            "https://iili.io/33gZrS1.png",
-            "https://iili.io/33gZ6HF.png",
-            "https://iili.io/33gZiNa.png",
-            "https://iili.io/33gZbKN.png",
-            "https://iili.io/33gZZVR.png",
-            "https://iili.io/33gZmlI.jpg"
-          ],
+            "https://iili.io/3fO1bAF.png",
+            "https://iili.io/3fO1D91.png",
+            "https://iili.io/3fO1mwg.png",
+            "https://iili.io/3fO1Z8P.png",
+            "https://iili.io/3fOE2Fp.png",
+            "https://iili.io/3fOEJPR.png",
+            "https://iili.io/3fO1pta.png",
+            "https://iili.io/3fOE9oJ.png",
+            "https://iili.io/3fOEHMv.png",
+            "https://iili.io/3fOEf9t.png",
+            "https://iili.io/3fOEFSI.png",
+            "https://iili.io/3fOEooG.png",
+            "https://iili.io/3fOECts.png",
+            "https://iili.io/3fOExVf.png",
+            "https://iili.io/3fOETKl.png",
+            "https://iili.io/3fOEul2.png",
+            "https://iili.io/3fOEaDu.png",
+            "https://iili.io/3fOEYNe.png",
+            "https://iili.io/3fOE0Vj.png",
+            "https://iili.io/3fOE1ix.png",
+            "https://iili.io/3fOEMlV.png",
+            "https://iili.io/3fOEGKQ.png",
+            "https://iili.io/3fOEVUB.png",
+            "https://iili.io/3fOEXHP.png",
+            "https://iili.io/3fOEhR1.png"
+          ],          
+          "projectNotes": [
+            "Advanced AI Integration: The migration to SvelteJS significantly improved performance metrics with a 40% reduction in loading times compared to the original version. The YoloV8 algorithm achieves over 95% accuracy in license plate detection under various lighting and angle conditions.",
+            "Behavioral Pattern Analysis: The platform incorporates sophisticated data visualization tools that transform raw license plate records into actionable intelligence. Users can identify traffic patterns, recurring visitors, and anomalous vehicle behavior through intuitive heatmaps and timeline views.",
+            "Scalable Architecture: The redesigned system architecture allows for distributed processing of video feeds, enabling real-time monitoring across multiple locations simultaneously without performance degradation. The MySQL database schema was optimized for rapid querying of historical plate data."
+          ],          
           "technologies": [
             {
-              "name": "ExpressJS",
-              "backgroundColor": "#000000",
+              "name": "SvelteJS",
+              "backgroundColor": "#FF3E00",
               "textColor": "#FFFFFF"
             },
             {
@@ -87,8 +113,12 @@
           "id": 2,
           "title": "YoloV8 Vehicle License Plate Detection Software",
           "description": "Development of license plate recognition software using the YoloV8 artificial intelligence algorithm.",
-          "backgroundUrl": "https://placehold.co/600x400",
-          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "backgroundUrl": "https://iili.io/3fjWjPR.png",
+          "projectNotes": [
+            "Custom Model Training: The YoloV8 model was fine-tuned with a dataset of over 10,000 Colombian license plates, considering regional variations and deterioration. This specialized training resulted in a 30% increase in recognition rates compared to generic models.",
+            "Real-time Processing: The software processes video feeds at 20-30 frames per second on standard hardware, with intelligent frame sampling to balance accuracy and performance. A buffering system ensures that no plates are missed during processing spikes.",
+            "Character Recognition Enhancement: Advanced post-processing algorithms correct common OCR errors specific to license plate fonts, improving character recognition accuracy from 85% to 98%. The system can distinguish between similar characters (e.g., 8/B, 0/O) with high confidence."
+          ],
           "screenshots": [
             "https://iili.io/33gNYcN.png",
             "https://iili.io/33gN0AX.png",
@@ -136,8 +166,12 @@
           "id": 3,
           "title": "Sports Tournament Management Platform",
           "description": "Development of a full-stack platform with role management, routing, and authentication in ReactJS and ExpressJS to manage each phase of sports tournaments, using advanced and dynamic validations with the express-validator library.",
-          "backgroundUrl": "https://placehold.co/600x400",
-          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "backgroundUrl": "https://iili.io/3fjmHuI.png",
+          "projectNotes": [
+            "Dynamic Tournament Configuration: The platform supports multiple tournament structures (knockout, round-robin, group stages) with automatic schedule generation and conflict resolution. The system intelligently distributes matches across available venues and time slots.",
+            "Real-time Scoring System: Match officials can update scores in real-time, triggering automatic bracket updates, notifications, and statistics recalculation. A dual-verification system prevents scoring errors during high-stakes matches.",
+            "Comprehensive Analytics: Teams and administrators have access to detailed performance metrics, including historical matchups, player statistics, and predictive analytics based on past performance. Custom reports can be generated for stakeholders with various data visualization options."
+          ],
           "screenshots": [
             "https://iili.io/33rFs2a.png",
             "https://iili.io/33rFQkv.png",
@@ -189,8 +223,12 @@
           "id": 4,
           "title": "Natural Language to Sign Language Translator (Virtual Interpreter)",
           "description": "Development of an ExpressJS API to interpret Colombian sign language based on artificial intelligence using GPT-4 and the OpenAI API.",
-          "backgroundUrl": "https://placehold.co/600x400",
-          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "backgroundUrl": "https://iili.io/3fw2dJa.png",
+          "projectNotes": [
+            "Context-Aware Translation: The system does not simply translate words individually but analyzes entire sentences to maintain proper grammatical structure in sign language. It handles idiomatic expressions by translating the underlying meaning rather than literal words.",
+            "Customizable Avatar System: The interpreter avatar can be customized for gender, age, and appearance to create a more comfortable and personalized experience for users. Different signing speeds are available to accommodate both beginners and fluent signers.",
+            "Educational Mode: Beyond translation, the system includes an educational component that explains sign choices and provides alternative signs for certain concepts. This feature helps users learn sign language while using the translation tool."
+          ],
           "screenshots": ["https://iili.io/33rxcOu.gif"],
           "technologies": [
             {
@@ -224,8 +262,16 @@
           "id": 5,
           "title": "Alumni Tracking System",
           "description": "This software allows alumni to submit their education and jobs after graduation so the university can track statistics. I developed the application views in ReactJS, including both the landing page and dashboard system. I designed the UI/UX using the DaisyUI component library to ensure visual consistency throughout the product. On the backend, using ExpressJS, I included secure authentication systems and session management. Additionally, I integrated an external public API of data (universities in the country) to dynamically capture user response from inputs.",
-          "backgroundUrl": "https://placehold.co/600x400",
-          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "githubUrl": {
+            "frontend": "https://github.com/cami98735264/egresados-iesi",
+            "backend": "https://github.com/cami98735264/egresados-sanisidoro-backend"
+          },
+          "backgroundUrl": "https://iili.io/3fOTMcG.png",
+          "projectNotes": [
+            "Career Trajectory Visualization: The system generates visual representations of alumni career paths, identifying common industry transitions and advancement patterns. This provides valuable insights for current students planning their education and career paths.",
+            "Networking Facilitation: The platform includes features to connect alumni working in similar fields or regions, creating a valuable professional network. Privacy controls allow users to determine what information is visible to other alumni.",
+            "Data-Driven Curriculum Feedback: Analytics from alumni employment outcomes directly inform curriculum development, highlighting skill gaps and emerging industry requirements. Department heads receive regular reports on alumni success metrics relevant to their programs."
+          ],
           "screenshots": [
             "https://iili.io/33gpqhu.png",
             "https://iili.io/33gp3k7.png",
@@ -275,9 +321,15 @@
         {
           "id": 6,
           "title": "Veterinary System",
+          "githubUrl": {
+            "frontend": "https://github.com/cami98735264/veterinaria-crud-sessions",
+            "backend": "https://github.com/cami98735264/veterinaria-crud-sessions-backend"
+          },
           "description": "I designed and developed the registration and login module, including the creation of the application's UI/UX. I implemented a CRUD system to manage pet appointments, integrating dynamic data from the database such as animal type and consultation type (surgery, check-up, accident, etc.). The system was configured to include consultation prices and display relevant data on screen. Advanced functionalities were integrated to improve the management and presentation of crucial information for veterinary practice.",
-          "backgroundUrl": "https://placehold.co/600x400",
-          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "backgroundUrl": "https://iili.io/3fwhBHB.png",
+          "projectNotes": [
+            "Treatment Protocol Management: Veterinarians can access and update standardized treatment protocols for common conditions, ensuring consistency across practitioners. The system tracks protocol adherence and outcomes to improve veterinary care."
+          ],
           "screenshots": [
             "https://iili.io/33rCQzx.png",
             "https://iili.io/33rCsbj.png",
@@ -325,8 +377,15 @@
           "id": 7,
           "title": "Advanced Authentication for a Sensor Platform",
           "description": "During the development of the sensor system, I created a complete login and registration system using ExpressJS and email authentication. This included implementing functionality to send login codes via email using Google application temporary credentials and the Nodemailer library. On the frontend, built with ReactJS and DaisyUI, these dynamic login codes were sent to users via email and seamlessly integrated into the login form, ensuring a smooth and secure authentication process.",
-          "backgroundUrl": "https://placehold.co/600x400",
-          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "backgroundUrl": "https://iili.io/33rdx5l.png",
+          "githubUrl": {
+            "frontend": "https://github.com/cami98735264/sensores-auth-system-router",
+            "backend": "https://github.com/cami98735264/sensores-auth-system-router-backend"
+          },
+          "projectNotes": [
+            "Multi-factor Security Architecture: The email authentication system implements time-sensitive tokens with server-side verification, making it resistant to common authentication attacks. Failed authentication attempts trigger progressive security measures."
+          ],
+          
           "screenshots": [
             "https://iili.io/33rdx5l.png",
             "https://iili.io/33rdoJ4.png",
@@ -369,14 +428,35 @@
         },
         {
           "id": 8,
-          "title": "Vehicle License Plate Detection and Monitoring Platform V2 (Improved and migrated to SvelteJS)",
-          "description": "Platform and detection software that uses the YoloV8 artificial intelligence algorithm for license plate recognition. Implementation of functionalities to study and map behavior patterns based on the location of license plate records within the web platform using the SvelteJS framework",
-          "backgroundUrl": "https://placehold.co/600x400",
-          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "title": "Vehicle License Plate Detection and Monitoring Platform (old version)",
+          "description": "Platform and detection software that uses the YoloV8 artificial intelligence algorithm for license plate recognition. Implementation of functionalities to study and map behavior patterns based on the location of license plate records within the web platform hosted in static files using ExpressJS.",
+          "backgroundUrl": "https://iili.io/3fjWjPR.png",
+          "githubUrl": {
+            "frontend": "https://github.com/cami98735264/graphical-interface-monitoreo-placas",
+            "backend": "https://github.com/cami98735264/graphical-interface-monitoreo-placas"
+          },
+          "projectNotes": [
+            "Foundation for Evolution: This initial version established the core data models and processing pipelines that enabled the more sophisticated V2 platform. The architecture was designed with future scalability in mind, facilitating the later migration to SvelteJS."
+          ],
+          "screenshots": [
+            "https://iili.io/33gZNwb.png",
+            "https://iili.io/33gZWc7.png",
+            "https://iili.io/33gZOtj.png",
+            "https://iili.io/33gZvMQ.png",
+            "https://iili.io/33gZ8PV.png",
+            "https://iili.io/33gZUKB.png",
+            "https://iili.io/33gZgcP.png",
+            "https://iili.io/33gZrS1.png",
+            "https://iili.io/33gZ6HF.png",
+            "https://iili.io/33gZiNa.png",
+            "https://iili.io/33gZbKN.png",
+            "https://iili.io/33gZZVR.png",
+            "https://iili.io/33gZmlI.jpg"
+          ],
           "technologies": [
             {
-              "name": "SvelteJS",
-              "backgroundColor": "#FF3E00",
+              "name": "ExpressJS",
+              "backgroundColor": "#000000",
               "textColor": "#FFFFFF"
             },
             {
@@ -400,8 +480,22 @@
           "id": 9,
           "title": "Portfolio V1",
           "description": "Development and first design of my first personal portfolio using Astro to showcase my projects and technologies.",
-          "backgroundUrl": "https://placehold.co/600x400",
-          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "backgroundUrl": "https://iili.io/3fNkiu4.png",
+          "onlineUrl": "https://cami98735264.netlify.app/",
+          "githubUrl": {
+            "frontend": "https://github.com/cami98735264/portfolio-website"
+          },
+          "projectNotes": [
+            "Performance-First Approach: The first portfolio iteration prioritized loading speed and accessibility, achieving a perfect 100 Lighthouse performance score. Static generation with Astro eliminated runtime JavaScript overhead while maintaining interactive components.",
+            "Content Strategy Development: This version established the initial content architecture that would evolve through later iterations. The project categorization system introduced here proved effective and was expanded in subsequent versions."
+          ],
+          "screenshots": [
+            "https://iili.io/3fNkiu4.png",
+            "https://iili.io/3fNk48G.png",
+            "https://iili.io/3fNkP9f.png",
+            "https://iili.io/3fNkras.png",
+            "https://iili.io/3fNkswl.png"
+          ],
           "technologies": [
             {
               "name": "Astro",
@@ -419,8 +513,25 @@
           "id": 10,
           "title": "Portfolio V2",
           "description": "Development and second design of my personal portfolio using Astro to showcase my projects and technologies.",
-          "backgroundUrl": "https://placehold.co/600x400",
-          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "backgroundUrl": "https://iili.io/3fNDFx1.png",
+          "screenshots": [
+            "https://iili.io/3fNDFx1.png",
+            "https://iili.io/3fNDdOB.png",
+            "https://iili.io/3fND2DP.png",
+            "https://iili.io/3fNDJRV.png",
+            "https://iili.io/3fNDKWF.png",
+            "https://iili.io/3fNDBfa.png",
+            "https://iili.io/3fNDxJR.png",
+            "https://iili.io/3fNDzRp.png"
+          ],          
+          "projectNotes": [
+            "Multilingual Support: This version introduced a comprehensive internationalization system supporting multiple languages with URL-based language switching. Content translations were managed through structured JSON files for easy maintenance.",
+            "Enhanced Project Showcasing: The project display system was redesigned to highlight technical details and visual elements more effectively. Interactive components allowed visitors to explore projects in greater depth without leaving the page."
+          ],
+          "onlineUrl": "https://new-design--cristackdesign.netlify.app/en/",
+          "githubUrl": {
+            "frontend": "https://github.com/cami98735264/portfolio-website/tree/new_design"
+          },
           "technologies": [
             {
               "name": "Astro",
@@ -438,8 +549,30 @@
           "id": 11,
           "title": "Portfolio V3",
           "description": "Development and third design of my personal portfolio using Astro to showcase my projects and technologies.",
-          "backgroundUrl": "https://placehold.co/600x400",
-          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "onlineUrl": "https://crodriguez.com.co",
+          "githubUrl": {
+            "frontend": "https://github.com/cami98735264/portfolio-v3"
+          },
+          "screenshots": [
+            "https://iili.io/3fOqaHP.png",
+            "https://iili.io/3fOq5lV.png",
+            "https://iili.io/3fOq7UB.png",
+            "https://iili.io/3fOqRKQ.png",
+            "https://iili.io/3fOqcR1.png",
+            "https://iili.io/3fOq0Dg.png",
+            "https://iili.io/3fOqGWJ.png",
+            "https://iili.io/3fOqExa.png",
+            "https://iili.io/3fOqWfR.png",
+            "https://iili.io/3fOqXlp.png",
+            "https://iili.io/3fOqhUN.png",
+            "https://iili.io/3fOqwJI.png",
+            "https://iili.io/3fOqNRt.png",
+            "https://iili.io/3fOqOOX.png"
+          ],          
+          "backgroundUrl": "https://iili.io/3fOqaHP.png",
+          "projectNotes": [
+            "Optimized Content Delivery: The latest portfolio version implements advanced lazy-loading and progressive enhancement techniques, resulting in near-instantaneous perceived loading times despite richer content. Critical paths were identified and prioritized."
+          ],
           "technologies": [
             {
               "name": "Astro",

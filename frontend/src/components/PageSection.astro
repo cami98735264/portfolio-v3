@@ -16,7 +16,7 @@ interface Props {
     maxWidth?: string
     padding?: string
 }
-const { fixedHeight, flexConfig, maxWidth, id, padding, margin, mobileMargin, mobilePadding } = Astro.props
+const { fixedHeight, flexConfig, maxWidth, id, padding, margin, mobileMargin, mobilePadding } = Astro.props;
 let mobilePaddingVar = (mobilePadding?.length) ? mobilePadding : ((padding?.split(" ")[1] && padding?.split(" ")[1] !== "0") ? padding?.split(" ")[0] + " 0" : padding)
 let mobileMarginVar = (mobileMargin?.length) ? mobileMargin : ((margin?.split(" ")[1] && margin?.split(" ")[1] !== "0") ? margin?.split(" ")[0] + " 0" : margin)
 ---
@@ -38,7 +38,7 @@ let mobileMarginVar = (mobileMargin?.length) ? mobileMargin : ((margin?.split(" 
     .page-section:first-child {
         margin-top: 60px;
     }
-    .page-section__content:not(#about-me):not(#sobre-mi):not(#project-page) {
+    .page-section__content:not(#about-me):not(#sobre-mi):not(#project-page):not(#error-404) {
         margin: 100px 0;
     } 	@media (max-width: 880px) {
     .page-section__content {

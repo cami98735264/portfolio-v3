@@ -22,21 +22,27 @@ import Container404 from "../Container404.astro";
 import ProjectPageBody from "../ProjectPageBody.astro";
 const locale = getLocale(Astro.url);
 const translations = await loadTranslations(locale);
+let projectHighlightText = translations.sections.projects.projectsNotes;
+let viewGithub = translations.sections.projects.viewGithub;
+let viewOnline = translations.sections.projects.viewOnline;
 let projectInfo = translations.sections.projects.list.find((project: Project) => project.id == projectId);
 ---
 
 
 <PageSection
   id="project-page"
-  fixedHeight={false}
+  fixedHeight={!projectInfo}
   flexConfig={{
     enable: true,
+    ...!projectInfo ? { justify: "center", align: "center" } : { justify: "flex-start", align: "flex-start" },
     direction: "column",
     gap: "16px",
   }}
-  margin="76px 0"
+  margin={projectInfo ? "76px 0" : "0"}
   mobileMargin="60px 0"
   maxWidth="1680px">
-{projectInfo ? <ProjectPageHeader projectInfo={projectInfo}/>
-<ProjectPageBody /> : <Container404 text="Project not found!" />}
+{projectInfo ?
+<ProjectPageHeader projectInfo={{...projectInfo, viewGithub, viewOnline }}/>
+<ProjectPageBody projectInfo={{ projectHighlightText, ...projectInfo }} /> :
+<Container404 text={translations["404"].description} />}
 </PageSection>

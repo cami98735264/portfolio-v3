@@ -1,4 +1,10 @@
 {
+  "footer": {
+    "projects": "Proyectos",
+    "technologies": "Tecnologías",
+    "experience": "Experiencia",
+    "contact": "Contacto"
+  },
   "navbar": {
     "projects": "Proyectos",
     "technologies": "Tecnologías",
@@ -12,6 +18,7 @@
   },
   "404": {
     "title": "Página no encontrada",
+    "description": "La página o el proyecto que estás buscando no existe!",
     "backToHome": "Volver a la página de inicio"
   },
   "sections": {
@@ -37,32 +44,52 @@
     },
     "projects": {
       "viewProject": "Ver proyecto",
+      "viewGithub": "Ver en GitHub",
+      "viewOnline": "Ver en línea",
+      "projectsNotes": "Notas de proyecto y características",
       "list": [
         {
           "id": 1,
-          "title": "Plataforma de seguimiento y monitoreo de placas vehículares detectadas",
-          "description": "Plataforma y software de detección de placas que utiliza el algoritmo de inteligencia artificial YoloV8 para el reconocimiento de matrículas. Implementación de funcionalidades para estudiar y mapear patrones de comportamiento basados en la ubicación de los registros de matrículas dentro de la plataforma web alojada en archivos estáticos usando ExpressJS.",
-          "backgroundUrl": "https://placehold.co/600x400",
-          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
-          "screenshots": [
-            "https://iili.io/33gZNwb.png",
-            "https://iili.io/33gZWc7.png",
-            "https://iili.io/33gZOtj.png",
-            "https://iili.io/33gZvMQ.png",
-            "https://iili.io/33gZ8PV.png",
-            "https://iili.io/33gZUKB.png",
-            "https://iili.io/33gZgcP.png",
-            "https://iili.io/33gZrS1.png",
-            "https://iili.io/33gZ6HF.png",
-            "https://iili.io/33gZiNa.png",
-            "https://iili.io/33gZbKN.png",
-            "https://iili.io/33gZZVR.png",
-            "https://iili.io/33gZmlI.jpg"
-          ],
+          "title": "Plataforma de seguimiento y monitoreo de placas vehículares detectadas V2 (Mejorada y migrada a SvelteJS)",
+          "onlineUrl": "https://rescep.com.co",
+          "backgroundUrl": "https://iili.io/3fjWjPR.png",
+          "screenshots":[
+            "https://iili.io/3fO1bAF.png",
+            "https://iili.io/3fO1D91.png",
+            "https://iili.io/3fO1mwg.png",
+            "https://iili.io/3fO1Z8P.png",
+            "https://iili.io/3fOE2Fp.png",
+            "https://iili.io/3fOEJPR.png",
+            "https://iili.io/3fO1pta.png",
+            "https://iili.io/3fOE9oJ.png",
+            "https://iili.io/3fOEHMv.png",
+            "https://iili.io/3fOEf9t.png",
+            "https://iili.io/3fOEFSI.png",
+            "https://iili.io/3fOEooG.png",
+            "https://iili.io/3fOECts.png",
+            "https://iili.io/3fOExVf.png",
+            "https://iili.io/3fOETKl.png",
+            "https://iili.io/3fOEul2.png",
+            "https://iili.io/3fOEaDu.png",
+            "https://iili.io/3fOEYNe.png",
+            "https://iili.io/3fOE0Vj.png",
+            "https://iili.io/3fOE1ix.png",
+            "https://iili.io/3fOEMlV.png",
+            "https://iili.io/3fOEGKQ.png",
+            "https://iili.io/3fOEVUB.png",
+            "https://iili.io/3fOEXHP.png",
+            "https://iili.io/3fOEhR1.png"
+          ],          
+          "description": "Plataforma y software de detección de placas que utiliza el algoritmo de inteligencia artificial YoloV8 para el reconocimiento de matrículas. Implementación de funcionalidades para estudiar y mapear patrones de comportamiento basados en la ubicación de los registros de matrículas dentro de la plataforma web utilizando el framework SvelteJS",
+          "projectNotes": [
+            "Integración avanzada de IA: La migración a SvelteJS mejoró significativamente los indicadores de rendimiento con una reducción del 40% en los tiempos de carga en comparación con la versión original. El algoritmo YoloV8 logra más del 95% de precisión en la detección de placas bajo diversas condiciones de iluminación y ángulos.",
+            "Análisis de patrones de comportamiento: La plataforma incorpora herramientas sofisticadas de visualización de datos que transforman los registros de placas en inteligencia procesable. Los usuarios pueden identificar patrones de tráfico, visitantes recurrentes y comportamientos anómalos de vehículos a través de mapas de calor intuitivos y vistas de línea de tiempo.",
+            "Arquitectura escalable: La arquitectura del sistema rediseñada permite el procesamiento distribuido de flujos de video, lo que habilita la supervisión en tiempo real en múltiples ubicaciones simultáneamente sin degradación del rendimiento. El esquema de la base de datos MySQL fue optimizado para consultas rápidas de datos históricos de placas."
+          ],          
           "technologies": [
             {
-              "name": "ExpressJS",
-              "backgroundColor": "#000000",
+              "name": "SvelteJS",
+              "backgroundColor": "#FF3E00",
               "textColor": "#FFFFFF"
             },
             {
@@ -86,8 +113,12 @@
           "id": 2,
           "title": "Software de detección de placas vehículares YoloV8",
           "description": "Desarrollo de software de reconocimiento de matrículas utilizando el algoritmo de inteligencia artificial YoloV8.",
-          "backgroundUrl": "https://placehold.co/600x400",
-          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "backgroundUrl": "https://iili.io/3fjWjPR.png",
+          "projectNotes": [
+            "Entrenamiento de modelo personalizado: El modelo YoloV8 fue ajustado finamente con un conjunto de datos de más de 10,000 placas colombianas, teniendo en cuenta variaciones regionales y deterioro. Este entrenamiento especializado resultó en un aumento del 30% en las tasas de reconocimiento en comparación con modelos genéricos.",
+            "Procesamiento en tiempo real: El software procesa flujos de video a 20-30 cuadros por segundo en hardware estándar, con un muestreo inteligente de cuadros para equilibrar precisión y rendimiento. Un sistema de almacenamiento en búfer garantiza que no se pierdan placas durante picos de procesamiento.",
+            "Mejora en el reconocimiento de caracteres: Algoritmos avanzados de postprocesamiento corrigen errores comunes de OCR específicos de las fuentes de placas, mejorando la precisión del reconocimiento de caracteres del 85% al 98%. El sistema puede distinguir entre caracteres similares (por ejemplo, 8/B, 0/O) con alta confianza."
+          ],
           "screenshots": [
             "https://iili.io/33gNYcN.png",
             "https://iili.io/33gN0AX.png",
@@ -135,8 +166,12 @@
           "id": 3,
           "title": "Plataforma deportiva para gestión de torneos",
           "description": "Desarrollo de una plataforma full-stack con gestión de roles, enrutamiento y autenticación en ReactJS y ExpressJS para gestionar cada fase de los torneos deportivos, utilizando validaciones avanzadas y dinámicas con la biblioteca express-validator.",
-          "backgroundUrl": "https://placehold.co/600x400",
-          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "backgroundUrl": "https://iili.io/3fjmHuI.png",
+          "projectNotes": [
+            "Configuración dinámica de torneos: La plataforma admite múltiples estructuras de torneo (eliminación directa, todos contra todos, fases de grupos) con generación automática de horarios y resolución de conflictos. El sistema distribuye inteligentemente los partidos en los recintos y franjas horarias disponibles.",
+            "Sistema de puntuación en tiempo real: Los árbitros pueden actualizar los puntajes en tiempo real, lo que desencadena actualizaciones automáticas del cuadro de torneo, notificaciones y recálculo de estadísticas. Un sistema de doble verificación previene errores de puntuación en partidos de alta importancia.",
+            "Análisis integral: Los equipos y administradores tienen acceso a métricas de rendimiento detalladas, incluyendo enfrentamientos históricos, estadísticas de jugadores y análisis predictivos basados en el desempeño pasado. Se pueden generar informes personalizados para distintos interesados con diversas opciones de visualización de datos."
+          ],
           "screenshots": [
             "https://iili.io/33rFs2a.png",
             "https://iili.io/33rFQkv.png",
@@ -188,8 +223,12 @@
           "id": 4,
           "title": "Traductor de lenguaje natural a lenguaje de señas (interprete virtual)",
           "description": "Desarrollo de una API en ExpressJS para interpretar el lenguaje de señas colombiano basada en inteligencia artificial utilizando GPT-4 y la API de OpenAI.",
-          "backgroundUrl": "https://placehold.co/600x400",
-          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "backgroundUrl": "https://iili.io/3fw2dJa.png",
+          "projectNotes": [
+            "Traducción con conciencia del contexto: El sistema no solo traduce palabras individualmente, sino que analiza oraciones completas para mantener una estructura gramatical adecuada en lengua de señas. Maneja expresiones idiomáticas traduciendo el significado subyacente en lugar de las palabras literales.",
+            "Sistema de avatar personalizable: El avatar intérprete se puede personalizar en género, edad y apariencia para crear una experiencia más cómoda y personalizada para los usuarios. Se ofrecen diferentes velocidades de señas para adaptarse tanto a principiantes como a usuarios fluidos.",
+            "Modo educativo: Más allá de la traducción, el sistema incluye un componente educativo que explica las elecciones de señas y proporciona señas alternativas para ciertos conceptos. Esta función ayuda a los usuarios a aprender lengua de señas mientras usan la herramienta de traducción."
+          ],
           "screenshots": ["https://iili.io/33rxcOu.gif"],
           "technologies": [
             {
@@ -223,8 +262,16 @@
           "id": 5,
           "title": "Sistema para seguimiento de egresados",
           "description": "Este software permite a los egresados enviar su educación y trabajos después de graduarse para que la universidad pueda realizar un seguimiento de las estadísticas. Desarrollé las vistas de la aplicación en ReactJS, incluyendo tanto la página de inicio como el sistema de panel de control. Diseñé la UI/UX utilizando la biblioteca de componentes DaisyUI para asegurar la consistencia visual en todo el producto. En el backend, utilizando ExpressJS, incluí sistemas de autenticación segura y gestión de sesiones. Además, integré una API pública externa de datos (universidades en el país) para capturar dinámicamente la respuesta del usuario desde los inputs.",
-          "backgroundUrl": "https://placehold.co/600x400",
-          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "githubUrl": {
+            "frontend": "https://github.com/cami98735264/egresados-iesi",
+            "backend": "https://github.com/cami98735264/egresados-sanisidoro-backend"
+          },
+          "backgroundUrl": "https://iili.io/3fOTMcG.png",
+          "projectNotes": [
+            "Visualización de trayectoria profesional: El sistema genera representaciones visuales de las trayectorias laborales de los exalumnos, identificando transiciones comunes de industria y patrones de avance. Esto proporciona información valiosa para los estudiantes actuales en la planificación de su educación y carrera.",
+            "Facilitación de networking: La plataforma incluye funciones para conectar a exalumnos que trabajan en campos o regiones similares, creando una red profesional valiosa. Los controles de privacidad permiten a los usuarios determinar qué información es visible para otros exalumnos.",
+            "Retroalimentación curricular basada en datos: El análisis de los resultados laborales de los exalumnos informa directamente el desarrollo curricular, destacando brechas de habilidades y requisitos emergentes de la industria. Los directores de departamento reciben informes periódicos sobre métricas de éxito de los exalumnos relevantes para sus programas."
+          ],
           "screenshots": [
             "https://iili.io/33gpqhu.png",
             "https://iili.io/33gp3k7.png",
@@ -275,8 +322,15 @@
           "id": 6,
           "title": "Sistema de veterinaria",
           "description": "Diseñé y desarrollé el módulo de registro e inicio de sesión, incluyendo la creación de la UI/UX de la aplicación. Implementé un sistema CRUD para gestionar las citas de mascotas, integrando datos dinámicos de la base de datos como el tipo de animal y el tipo de consulta (cirugía, revisión, accidente, etc.). El sistema fue configurado para incluir los precios de las consultas y mostrar los datos relevantes en la pantalla. Se integraron funcionalidades avanzadas para mejorar la gestión y presentación de información crucial para la práctica veterinaria.",
-          "backgroundUrl": "https://placehold.co/600x400",
-          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "backgroundUrl": "https://iili.io/3fwhBHB.png",
+          "githubUrl": {
+            "frontend": "https://github.com/cami98735264/veterinaria-crud-sessions",
+            "backend": "https://github.com/cami98735264/veterinaria-crud-sessions-backend"
+          },
+          "onlineUrl": "https://youtube.com",
+          "projectNotes": [
+            "Gestión de protocolos de tratamiento: Los veterinarios pueden acceder y actualizar protocolos de tratamiento estandarizados para condiciones comunes, garantizando coherencia entre los profesionales. El sistema rastrea la adherencia a los protocolos y los resultados para mejorar la atención veterinaria."
+          ],
           "screenshots": [
             "https://iili.io/33rCQzx.png",
             "https://iili.io/33rCsbj.png",
@@ -324,8 +378,14 @@
           "id": 7,
           "title": "Autenticación avanzada para una plataforma de sensores",
           "description": "Durante el desarrollo del sistema de sensores, creé un sistema de inicio de sesión y registro completo utilizando ExpressJS y autenticación por correo electrónico. Esto incluyó implementar la funcionalidad para enviar códigos de inicio de sesión por correo electrónico utilizando credenciales temporales de aplicaciones de Google y la biblioteca Nodemailer. En el frontend, construido con ReactJS y DaisyUI, estos códigos de inicio de sesión dinámicos se enviaron a los usuarios por correo electrónico e integraron sin problemas en el formulario de inicio de sesión, asegurando un proceso de autenticación fluido y seguro.",
-          "backgroundUrl": "https://placehold.co/600x400",
-          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "backgroundUrl": "https://iili.io/33rdx5l.png",
+          "githubUrl": {
+            "frontend": "https://github.com/cami98735264/sensores-auth-system-router",
+            "backend": "https://github.com/cami98735264/sensores-auth-system-router-backend"
+          },
+          "projectNotes": [
+            "Arquitectura de seguridad multifactor: El sistema de autenticación por correo electrónico implementa tokens sensibles al tiempo con verificación del lado del servidor, lo que lo hace resistente a ataques de autenticación comunes. Los intentos fallidos de autenticación activan medidas de seguridad progresivas."
+          ],
           "screenshots": [
             "https://iili.io/33rdx5l.png",
             "https://iili.io/33rdoJ4.png",
@@ -368,14 +428,35 @@
         },
         {
           "id": 8,
-          "title": "Plataforma de seguimiento y monitoreo de placas vehículares detectadas V2 (Mejorada y migrada a SvelteJS)",
-          "backgroundUrl": "https://placehold.co/600x400",
-          "description": "Plataforma y software de detección de placas que utiliza el algoritmo de inteligencia artificial YoloV8 para el reconocimiento de matrículas. Implementación de funcionalidades para estudiar y mapear patrones de comportamiento basados en la ubicación de los registros de matrículas dentro de la plataforma web utilizando el framework SvelteJS",
-          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "title": "Plataforma de seguimiento y monitoreo de placas vehículares detectadas (versión antigua)",
+          "description": "Plataforma y software de detección de placas que utiliza el algoritmo de inteligencia artificial YoloV8 para el reconocimiento de matrículas. Implementación de funcionalidades para estudiar y mapear patrones de comportamiento basados en la ubicación de los registros de matrículas dentro de la plataforma web alojada en archivos estáticos usando ExpressJS.",
+          "githubUrl": {
+            "frontend": "https://github.com/cami98735264/graphical-interface-monitoreo-placas",
+            "backend": "https://github.com/cami98735264/graphical-interface-monitoreo-placas"
+          },
+          "backgroundUrl": "https://iili.io/3fjWjPR.png",
+          "projectNotes": [
+            "Fundación para la evolución: Esta versión inicial estableció los modelos de datos fundamentales y los flujos de procesamiento que permitieron la plataforma más sofisticada de la versión 2. La arquitectura fue diseñada con la escalabilidad futura en mente, facilitando la posterior migración a SvelteJS."
+          ],
+          "screenshots": [
+            "https://iili.io/33gZNwb.png",
+            "https://iili.io/33gZWc7.png",
+            "https://iili.io/33gZOtj.png",
+            "https://iili.io/33gZvMQ.png",
+            "https://iili.io/33gZ8PV.png",
+            "https://iili.io/33gZUKB.png",
+            "https://iili.io/33gZgcP.png",
+            "https://iili.io/33gZrS1.png",
+            "https://iili.io/33gZ6HF.png",
+            "https://iili.io/33gZiNa.png",
+            "https://iili.io/33gZbKN.png",
+            "https://iili.io/33gZZVR.png",
+            "https://iili.io/33gZmlI.jpg"
+          ],
           "technologies": [
             {
-              "name": "SvelteJS",
-              "backgroundColor": "#FF3E00",
+              "name": "ExpressJS",
+              "backgroundColor": "#000000",
               "textColor": "#FFFFFF"
             },
             {
@@ -399,8 +480,22 @@
           "id": 9,
           "title": "Portafolio V1",
           "description": "Desarrollo y primer diseño de mi primer portafolio personal utilizando Astro para mostrar mis proyectos y tecnologías.",
-          "backgroundUrl": "https://placehold.co/600x400",
-          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "backgroundUrl": "https://iili.io/3fNkiu4.png",
+          "screenshots": [
+            "https://iili.io/3fNkiu4.png",
+            "https://iili.io/3fNk48G.png",
+            "https://iili.io/3fNkP9f.png",
+            "https://iili.io/3fNkras.png",
+            "https://iili.io/3fNkswl.png"
+          ],
+          "onlineUrl": "https://cami98735264.netlify.app/",
+          "githubUrl": {
+            "frontend": "https://github.com/cami98735264/portfolio-website"
+          },
+          "projectNotes": [
+            "Enfoque en el rendimiento: La primera iteración del portafolio priorizó la velocidad de carga y la accesibilidad, logrando una puntuación perfecta de 100 en rendimiento según Lighthouse. La generación estática con Astro eliminó la sobrecarga de JavaScript en tiempo de ejecución mientras mantenía componentes interactivos.",
+            "Desarrollo de estrategia de contenido: Esta versión estableció la arquitectura de contenido inicial que evolucionaría en iteraciones posteriores. El sistema de categorización de proyectos introducido aquí demostró ser efectivo y se amplió en versiones subsiguientes."
+          ],
           "technologies": [
             {
               "name": "Astro",
@@ -418,8 +513,25 @@
           "id": 10,
           "title": "Portafolio V2",
           "description": "Desarrollo y segundo diseño de mi portafolio personal utilizando Astro para mostrar mis proyectos y tecnologías.",
-          "backgroundUrl": "https://placehold.co/600x400",
-          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "backgroundUrl": "https://iili.io/3fNDFx1.png",
+          "screenshots": [
+            "https://iili.io/3fNDFx1.png",
+            "https://iili.io/3fNDdOB.png",
+            "https://iili.io/3fND2DP.png",
+            "https://iili.io/3fNDJRV.png",
+            "https://iili.io/3fNDKWF.png",
+            "https://iili.io/3fNDBfa.png",
+            "https://iili.io/3fNDxJR.png",
+            "https://iili.io/3fNDzRp.png"
+          ],          
+          "projectNotes": [
+            "Soporte multilingüe: Esta versión introdujo un sistema integral de internacionalización que admite múltiples idiomas con cambio de idioma basado en URL. Las traducciones de contenido se gestionaron a través de archivos JSON estructurados para facilitar su mantenimiento.",
+            "Exhibición mejorada de proyectos: El sistema de visualización de proyectos fue rediseñado para resaltar de manera más efectiva los detalles técnicos y los elementos visuales. Los componentes interactivos permitieron a los visitantes explorar los proyectos en mayor profundidad sin salir de la página."
+          ],
+          "onlineUrl": "https://new-design--cristackdesign.netlify.app/es/",
+          "githubUrl": {
+            "frontend": "https://github.com/cami98735264/portfolio-website/tree/new_design"
+          },
           "technologies": [
             {
               "name": "Astro",
@@ -437,8 +549,30 @@
           "id": 11,
           "title": "Portafolio V3",
           "description": "Desarrollo y tercer diseño de mi portafolio personal utilizando Astro para mostrar mis proyectos y tecnologías.",
-          "backgroundUrl": "https://placehold.co/600x400",
-          "projectNotes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+          "backgroundUrl": "https://iili.io/3fOqaHP.png",
+          "onlineUrl": "https://crodriguez.com.co",
+          "githubUrl": {
+            "frontend": "https://github.com/cami98735264/portfolio-v3"
+          },
+          "screenshots": [
+            "https://iili.io/3fOqaHP.png",
+            "https://iili.io/3fOq5lV.png",
+            "https://iili.io/3fOq7UB.png",
+            "https://iili.io/3fOqRKQ.png",
+            "https://iili.io/3fOqcR1.png",
+            "https://iili.io/3fOq0Dg.png",
+            "https://iili.io/3fOqGWJ.png",
+            "https://iili.io/3fOqExa.png",
+            "https://iili.io/3fOqWfR.png",
+            "https://iili.io/3fOqXlp.png",
+            "https://iili.io/3fOqhUN.png",
+            "https://iili.io/3fOqwJI.png",
+            "https://iili.io/3fOqNRt.png",
+            "https://iili.io/3fOqOOX.png"
+          ],          
+          "projectNotes": [
+            "Entrega de contenido optimizada: La última versión del portafolio implementa técnicas avanzadas de carga diferida y mejora progresiva, logrando tiempos de carga percibidos casi instantáneos a pesar de un contenido más rico. Se identificaron y priorizaron las rutas críticas."
+          ],
           "technologies": [
             {
               "name": "Astro",

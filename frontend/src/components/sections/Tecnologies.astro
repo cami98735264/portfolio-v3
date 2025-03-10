@@ -1,6 +1,5 @@
 ---
 import PageSection from "../PageSection.astro"
-import Project from "../Project.jsx"
 import TechnologiesList from "../TechnologiesList.astro"
 import { loadTranslations } from "../../i18n";
 import { getLocale } from "astro-i18n-aut";
@@ -8,6 +7,7 @@ import { removeAccents } from "../../utils/utils";
 const locale = getLocale(Astro.url);
 const translations = await loadTranslations(locale);
 let convertedId = removeAccents(translations.sections.technologies.containerId).toLowerCase().split(" ").join("-");
+let totalTechnologies = translations.sections.technologies.categories.frontend.length + translations.sections.technologies.categories.backend.length + translations.sections.technologies.categories.databases.length + translations.sections.technologies.categories.designTools.length + translations.sections.technologies.categories.deployment.length;
 ---
 
 
@@ -19,7 +19,7 @@ let convertedId = removeAccents(translations.sections.technologies.containerId).
     gap: "24px",
 }} maxWidth="1680px" padding="92px 48px">
     <h2 data-aos="zoom-out">{translations.sections.technologies.title}</h2>
-    <div id="project__header__label" data-aos="zoom-out"><span style="color: var(--secondary);">11</span> {translations.sections.technologies.count.description}</div>
+    <div id="project__header__label" data-aos="zoom-out"><span style="color: var(--secondary);">{totalTechnologies}</span> {translations.sections.technologies.count.description}</div>
     <p data-aos="zoom-out">{translations.sections.technologies.description}</p>
     <div class="technologies__list__container">
         <TechnologiesList title={translations.sections.technologies.categories.frontend} technologiesList={["html5", "react", "vitejs", "css3", "svelte", "nextjs", "astro"]} />

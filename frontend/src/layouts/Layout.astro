@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>Cristián Dev, Full Stack Developer</title>
@@ -71,23 +71,28 @@
     height: 1px;
     background-color: var(--border);
   }
-  html, body {
-  overflow-x: hidden;
-  position: relative;
-}
+  a {
+    text-decoration: none;
+    color: var(--primary);
+  }
+  html,
+  body {
+    overflow-x: hidden;
+    position: relative;
+  }
   body {
     padding: 20px 20px 0 20px;
     background-color: var(--background);
   }
 
-  *, html {
+  *,
+  html {
     scroll-behavior: smooth !important;
-
   }
 </style>
 
 <script>
-  import 'aos/dist/aos.css';
+  import "aos/dist/aos.css";
   import AOS from "aos";
-	AOS.init();
+  AOS.init();
 </script>

@@ -13,7 +13,6 @@ import { generateUrl, removeAccents, isMainPage } from "../utils/utils";
 const locale = getLocale(Astro.url);
 let pathname = Astro.url.pathname;
 const translations = await loadTranslations(locale);
-console.log(pathname);
 let { navbarElements } = Astro.props;
 ---
 
@@ -109,6 +108,7 @@ let { navbarElements } = Astro.props;
     align-items: center;
     padding: 12px 24px;
     background-color: #26212c;
+    border: 1px solid var(--border);
     border-radius: 12px;
   }
 
@@ -130,6 +130,11 @@ let { navbarElements } = Astro.props;
     font-weight: 300;
     color: #d9d3de;
     font-size: 0.9rem;
+    transition: color 0.2s ease;
+  }
+  
+  .navbar__links a:hover {
+    color: #fbfbfb;
   }
 
   .navbar__links {
