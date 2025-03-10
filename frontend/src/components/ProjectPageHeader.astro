@@ -56,10 +56,34 @@ let { backgroundUrl, technologies, viewGithub, viewOnline, githubUrl, onlineUrl 
 </div>
 
 <style>
-  h1 {
+h1 {
+    max-height: 100px;
+    overflow-y: auto;
     line-height: 1.1;
     font-size: var(--font-size-title);
-  }
+}
+
+/* style the scrollbar */
+h1::-webkit-scrollbar {
+    width: 8px;
+    display: none;
+}
+
+h1:hover::-webkit-scrollbar {
+    display: block;
+}
+
+h1::-webkit-scrollbar-thumb {
+    background-color: var(--border);
+    border-radius: 4px;
+}
+
+h1::-webkit-scrollbar-track {
+    background-color: var(--foreground);
+}
+
+
+
   .project-page-header {
     height: calc(100dvh - 128px);
     display: flex;
@@ -121,9 +145,53 @@ let { backgroundUrl, technologies, viewGithub, viewOnline, githubUrl, onlineUrl 
   }
 
   .project-header-content-description p {
+    max-height: 120px;
+    overflow: auto;
     font-size: var(--font-size-description);
     color: var(--copy-light);
   }
+
+  .project-header-content-description p::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .project-header-content-description p::-webkit-scrollbar-thumb {
+    background-color: var(--border);
+    border-radius: 4px;
+  }
+
+  .project-header-content-description p::-webkit-scrollbar-track {
+    background-color: var(--foreground);
+  }
+
+  .project-header-content-description p::-webkit-scrollbar-thumb:hover {
+    background-color: var(--border);
+  }
+
+  .project-header-content-description p::-webkit-scrollbar-thumb:active {
+    background-color: var(--border);
+  }
+
+  .project-header-content-description p::-webkit-scrollbar-track:hover {
+    background-color: var(--foreground);
+  }
+
+  .project-header-content-description p::-webkit-scrollbar-track:active {
+    background-color: var(--foreground);
+  }
+
+  .project-header-content-description p::-webkit-scrollbar-button {
+    display: none;
+  }
+
+  .project-header-content-description p::-webkit-scrollbar-corner {
+    display: none;
+  }
+
+  .project-header-content-description p::-webkit-resizer {
+    display: none;
+  }
+
 
   .project-header-content {
     padding: 60px;
@@ -138,7 +206,7 @@ let { backgroundUrl, technologies, viewGithub, viewOnline, githubUrl, onlineUrl 
     gap: 10px;
   }
 
-  @media (max-width: 880px) {
+  @media (max-width: 990px), (max-height: 660px) {
     .project-header-buttons {
       gap: 4px;
     }
