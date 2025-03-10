@@ -35,7 +35,7 @@ const translations = await loadTranslations(locale);
         footerElements.links.map((link: string) => {
           return <a href={`${isMainPage(pathname) ? `#${removeAccents(translations.footer[link].toLowerCase())}` : 
             `/${locale}/#${removeAccents(translations.footer[link].toLowerCase())}`
-            }`}>{translations.footer[link]}</a>;
+            }`}>{translations.footer[link].split("-").join(" ")}</a>;
         })
       }
     </div>
