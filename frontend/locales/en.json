@@ -25,6 +25,9 @@
     "aboutMe": {
       "containerId": "About me",
       "title": "About me",
+      "whatsappText": "Hi! I'd like to talk about your services! 🚀",
+      "emailTextBody": "Hi! I'd like to talk about your services or set up a meeting! 🚀",
+      "emailTextSubject": "Hey Cristián! 🚀",
       "description": "I'm a Full Stack developer specialized in backend and with extensive knowledge in JavaScript, ReactJS and ExpressJS. I stand out in advanced programming, database management and user experience design (UI/UX).",
       "descriptionTitle": "I'm Cristián, Full Stack Developer",
       "contactMe": "Contact me",

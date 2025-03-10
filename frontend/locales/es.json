@@ -25,6 +25,9 @@
     "aboutMe": {
       "containerId": "Sobre mí",
       "title": "Sobre mí",
+      "whatsappText": "Hola! Me gustaría saber más sobre tus servicios! 🚀",
+      "emailTextBody": "Hola! Me gustaría saber más sobre tus servicios! 🚀",
+      "emailTextSubject": "Hola Cristián! 🚀",
       "descriptionTitle": "Soy Cristián, Desarrollador Full Stack",
       "description": "Soy un desarrollador Full Stack especializado en backend y con amplios conocimientos en JavaScript, ReactJS y ExpressJS. Destaco en programación avanzada, gestión de bases de datos y diseño de experiencia de usuario (UI/UX).",
       "contactMe": "Contáctame",

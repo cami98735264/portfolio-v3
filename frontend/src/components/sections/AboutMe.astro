@@ -120,7 +120,7 @@ const descriptionTitle = translations.sections.aboutMe.descriptionTitle;
             class="hero__contact__link"
             data-aos="fade-right"
             data-aos-delay="1100"
-            href="wa.link/80u32v"
+            href={`https://wa.me/573186562061?text=${translations.sections.aboutMe.whatsappText.split(" ").join("+")}`}
             target="_blank"
           >
             <img src={Whatsapp} alt="WhatsApp Icon"/>
@@ -129,7 +129,7 @@ const descriptionTitle = translations.sections.aboutMe.descriptionTitle;
             class="hero__contact__link"
             data-aos="fade-right"
             data-aos-delay="1300"
-            href="https://mail.google.com/mail/u/0/?fs=1&to=mashlowtm0510@gmail.com&su=Hi!+I%27d+like+to+talk+about+your+services+:)&body=Hey!&tf=cm"
+            href={`https://mail.google.com/mail/u/0/?fs=1&to=mashlowtm0510@gmail.com&su=${translations.sections.aboutMe.emailTextBody.split(" ").join("+")}&body=${translations.sections.aboutMe.emailTextSubject.split(" ").join("+")}&tf=cm`}
             target="_blank"
           >
             <img src={Gmail} alt="Gmail Icon" />
