@@ -20,11 +20,11 @@ let projectStructure = [firstHalf, projectNotes, secondHalf];
     }
   </div>
   <div class="project-hightlights">
-    <h2>{projectHighlightText}</h2>
+    <h2 data-aos="fade-right">{projectHighlightText}</h2>
     <ul>
       {
         projectNotes.map((note: string) => {
-          return <li>{note}</li>;
+          return <li data-aos="fade-left" data-aos-delay="200">{note}</li>;
         })
       }
     </ul>
