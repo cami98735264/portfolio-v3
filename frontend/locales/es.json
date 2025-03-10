@@ -327,7 +327,6 @@
             "frontend": "https://github.com/cami98735264/veterinaria-crud-sessions",
             "backend": "https://github.com/cami98735264/veterinaria-crud-sessions-backend"
           },
-          "onlineUrl": "https://youtube.com",
           "projectNotes": [
             "Gestión de protocolos de tratamiento: Los veterinarios pueden acceder y actualizar protocolos de tratamiento estandarizados para condiciones comunes, garantizando coherencia entre los profesionales. El sistema rastrea la adherencia a los protocolos y los resultados para mejorar la atención veterinaria."
           ],

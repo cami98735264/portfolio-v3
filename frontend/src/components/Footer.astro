@@ -72,15 +72,16 @@ const translations = await loadTranslations(locale);
     justify-content: center;
   }
   .footer-nav a {
+    font-size: var(--font-size-description);
     color: var(--copy-light);
     text-decoration: none;
   }
   .footer-nav a:hover {
     text-decoration: underline;
   }
-  .footer-copy {
+  .footer-copy p {
     color: var(--copy-light);
-    font-size: 14px;
+    font-size: var(--font-size-description);
     text-align: center;
   }
 
@@ -96,7 +97,6 @@ const translations = await loadTranslations(locale);
     }
     .footer-copy {
         text-align: center;
-      font-size: 12px;
     }
   }
 </style>
