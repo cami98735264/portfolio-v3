@@ -587,7 +587,58 @@
               "textColor": "#000000"
             }
           ]
-        }
+        },
+        {
+          "id": 12,
+          "title": "Juego de TicTacToe con Estadística",
+          "description": "Un juego de TicTacToe con estadísticas desarrollado en SvelteJS, donde los jugadores pueden competir entre sí. Cada movimiento solo es válido si el jugador responde correctamente una pregunta. El juego está diseñado para jugarse en grupo, donde cada participante debe responder correctamente para poder hacer su jugada.",
+          "onlineUrl": "https://tiktak-toe-game.vercel.app/",
+          "githubUrl": {
+            "frontend": "https://github.com/cami98735264/tiktak-toe-game"
+          },
+          "screenshots": [
+            "https://iili.io/3GCQmx4.png",
+            "https://iili.io/3GCQZRs.png",
+            "https://iili.io/3GCQtOG.png",
+            "https://iili.io/3GCQDbf.png",
+            "https://iili.io/3GCQpWl.png",
+            "https://iili.io/3GCZCWQ.png",
+            "https://iili.io/3GCZnsV.png",
+            "https://iili.io/3GCZ3Je.png",
+            "https://iili.io/3GCZfbj.png",
+            "https://iili.io/3GCZxqB.png",
+            "https://iili.io/3GCZz0P.png",
+            "https://iili.io/3GCZIg1.png",
+            "https://iili.io/3GCZudF.png",
+            "https://iili.io/3GCZA5g.png",
+            "https://iili.io/3GCZRea.png",
+            "https://iili.io/3GCZ5mJ.png"
+          ],
+          "backgroundUrl": "https://iili.io/3GCQmx4.png",
+          "projectNotes": [
+            "Diseño Personalizado en Configuración: El juego permite a los jugadores personalizar el diseño de la interfaz general, incluyendo el fondo, los colores e incluso el tablero de TicTacToe. También incluye efectos de sonido envolventes, música de fondo y animaciones para mejorar la experiencia de juego.",
+            "Sistema de Juego Local: El juego puede jugarse localmente en el mismo dispositivo, permitiendo a los jugadores tomar turnos y responder preguntas. Está pensado para sesiones grupales, donde cada jugador debe responder correctamente para poder avanzar.",
+            "Diseño Intuitivo: El juego está diseñado para ser fácil de usar, con una interfaz simple e intuitiva que permite a los jugadores entender rápidamente cómo jugar. También incluye una vista de 'cómo jugar' para que los nuevos jugadores aprendan fácilmente y se diviertan.",
+            "Estructura del Proyecto Mejorada y Seguridad de Tipos: El proyecto fue construido asegurando una estructura limpia y organizada, con un enfoque en la seguridad de tipos y buenas prácticas. El uso de TypeScript permitió una mejor calidad de código y mantenimiento, facilitando la incorporación de nuevas funciones y la corrección de errores en el futuro."
+          ],
+          "technologies": [
+            {
+              "name": "SvelteJS",
+              "backgroundColor": "#FF3E00",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "name": "JavaScript",
+              "backgroundColor": "#F0DB4F",
+              "textColor": "#000000"
+            },
+            {
+              "name": "TypeScript",
+              "backgroundColor": "#007ACC",
+              "textColor": "#FFFFFF"
+            }
+          ]
+        }        
       ],
       "containerId": "Proyectos",
       "count": {
