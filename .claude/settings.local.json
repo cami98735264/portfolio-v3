@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__context7__resolve-library-id",
+      "mcp__context7__query-docs",
+      "Bash(curl -s https://registry.npmjs.org/astro-i18n-aut)",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); v=d['dist-tags']['latest']; print\\('latest:',v\\); print\\('peerDeps:',d['versions'][v].get\\('peerDependencies'\\)\\)\")",
+      "Bash(curl -s https://registry.npmjs.org/astro-icon)",
+      "Bash(curl -s https://registry.npmjs.org/@iconify-json/devicon)",
+      "Bash(curl -s https://registry.npmjs.org/@iconify-json/simple-icons)",
+      "Bash(curl -s https://registry.npmjs.org/@re-dev/react-truncate)",
+      "Bash(curl -s https://registry.npmjs.org/@astrojs/node)",
+      "Bash(curl -s https://registry.npmjs.org/@astrojs/react)",
+      "Bash(curl -s https://registry.npmjs.org/@astrojs/sitemap)",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:4321/en/)",
+      "Bash(npx astro *)",
+      "Bash(npx tsc *)",
+      "Bash(curl -sf -o /dev/null http://localhost:4321/)",
+      "Bash(curl -sI http://localhost:__TRACKED_VAR__/asda)"
+    ]
+  }
+}

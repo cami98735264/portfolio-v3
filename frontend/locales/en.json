@@ -702,7 +702,7 @@
           "description": "Greenfield platform delivery and platform reliability work for client products — covering React/Next.js + Node.js, Python/Django, Laravel admin tooling, AI-driven workflows and CI-grade testing infrastructure.",
           "tasksList": [
             "Shipped 4+ greenfield client platforms end-to-end in TypeScript / React / Next.js and Node.js.",
-            "Re-implemented the Dejusticia donation landing and resolved critical payment regressions in production.",
+            "Re-implemented a non-profit client's donation landing page and resolved critical payment regressions in production.",
             "Optimized Cloudflare Workers chat reliability — reducing lookup time from >10s down to ~0.5ms via Cloudflare KV.",
             "Built CI/CD pipeline with Cypress + Percy, Argo CD preview environments and GitHub Actions checks.",
             "Developed AI-driven n8n workflows integrating Front for automatic ticket classification and routing.",

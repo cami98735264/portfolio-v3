@@ -695,7 +695,7 @@
           "description": "Entrega de plataformas greenfield y trabajo de confiabilidad para productos de clientes — abarcando React/Next.js + Node.js, Python/Django, herramientas administrativas en Laravel, flujos impulsados por IA e infraestructura de testing en CI.",
           "tasksList": [
             "Entregué 4+ plataformas greenfield para clientes de extremo a extremo en TypeScript / React / Next.js y Node.js.",
-            "Reimplementé el landing de donaciones de Dejusticia y resolví regresiones críticas de pagos en producción.",
+            "Reimplementé el landing de donaciones de un cliente del sector sin ánimo de lucro y resolví regresiones críticas de pagos en producción.",
             "Optimicé la confiabilidad del chat sobre Cloudflare Workers — reduciendo el lookup de >10s a ~0.5ms usando Cloudflare KV.",
             "Construí un pipeline de CI/CD con Cypress + Percy, entornos de preview con Argo CD y checks automatizados en GitHub Actions.",
             "Desarrollé flujos en n8n impulsados por IA, integrando Front para clasificación y enrutamiento automático de tickets.",
